@@ -1,6 +1,7 @@
 package graphs
 
 import scala.collection._
+import System.nanoTime
 
 object Martello {
 
@@ -9,12 +10,11 @@ object Martello {
    * Returns a Map that for a vertex: Int gets a list of all neighbour
    * vertices.
    */
-  def createEdgeMap(graph: Array[Array[Int]]): Map[Int, Set[Int]] = { for {
-    i <- graph.indices
-    j <- graph.indices
-    if graph(i)(j) == 1
-  } yield (i -> j) 
-  } groupBy (x => x._1) mapValues (x => {x map (x => x._2)} toSet )
+  def createEdgeMap(graph: Array[Array[Int]]): Map[Int, Set[Int]] = {
+    for {
+      i <- graph.indices
+    } yield (i -> graph.indices.filter(j => graph(i)(j) == 1).toSet)
+  } toMap
 
   /** Returns the set of edges that must be in any Hamiltonian-Cycle
    *
@@ -84,6 +84,7 @@ object Martello {
         v3 <- outgoing(v1);
         if !implied.contains(v1, v3) && v3 != start) yield (v1, v3)
       emanating ++ termanating
+      
   }
 
   def prune(in: Map[Int, Set[Int]], out: Map[Int, Set[Int]], 
@@ -116,7 +117,7 @@ object Martello {
     }
   }
 
-def nextNode(sol: List[Int], checked: Set[Int], in: Map[Int, Set[Int]],
+  def nextNode(sol: List[Int], checked: Set[Int], in: Map[Int, Set[Int]],
       out: Map[Int, Set[Int]]): Option[Int] = {
 
     val degreeMap = in.keys.map(v => (v, in(v).size + out(v).size)).toMap
@@ -129,11 +130,12 @@ def nextNode(sol: List[Int], checked: Set[Int], in: Map[Int, Set[Int]],
     else           Some(a.head)
   }
 
-  def solve(graph: Array[Array[Int]], maxIter: Int) = {
+  def solve(graph: Array[Array[Int]], maxTime: Long) = {
     // step 0
     val incomingEdges = createEdgeMap(graph)
     val outgoingEdges = createEdgeMap(graph)
     var iterations = 0
+    val startTime  = nanoTime
 
     def isHamiltonian(sol: List[Int]) = 
       (sol.size == graph.size && graph(sol.head)(sol.last) == 1)
@@ -151,13 +153,12 @@ def nextNode(sol: List[Int], checked: Set[Int], in: Map[Int, Set[Int]],
     def recurseSolve(sol: List[Int], checked: Set[Int] = Set(),
       deleted: Set[(Int, Int)] = Set()): Option[Boolean] = {
       iterations = iterations + 1  
-
       val (currentIn, currentOut) = handleDelete(deleted, incomingEdges, outgoingEdges)
       val moreDelete              = prune(currentIn, currentOut, sol.last).toSet
       val (in, out)               = handleDelete(moreDelete, currentIn, currentOut)    
 
-      if      (iterations > maxIter)    None
-      else if (isHamiltonian(sol))      Some(true)
+      if      (nanoTime - startTime > maxTime)      None
+      else if (isHamiltonian(sol))      { println(sol); Some(true) }
       else if (!out.contains(sol.head)) Some(false)
       // have to double check
       else if (sol.size == graph.size)  recurseSolve(sol.tail, checked + sol.head, deleted)
@@ -180,6 +181,6 @@ def nextNode(sol: List[Int], checked: Set[Int], in: Map[Int, Set[Int]],
     }
 
     val start = List(nextNode(Nil, Set(), incomingEdges, outgoingEdges).get)
-    (recurseSolve(start), iterations)
+    (recurseSolve(start), iterations, nanoTime - startTime)
   }
 }

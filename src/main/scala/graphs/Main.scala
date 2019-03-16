@@ -4,15 +4,23 @@ import java.io.File
 import java.io.PrintWriter
 import java.nio.file.{Path, Paths, Files}
 import spray.json._
+import java.lang.management._
+import System._
 
 object Main extends App {
 
-  val maxIter = 1000000
+  val maxTime = 100000.toLong * 100000.toLong
+  val pw = new PrintWriter("results/vanhorn16.csv")
 
-  val pw = new PrintWriter("vanhornresults/vandegriend32.csv")
+  def getTime = {
+    val thread = ManagementFactory.getThreadMXBean()
+    thread.getAllThreadIds.toVector.map(id => thread.getThreadCpuTime(id)).reduce(_ + _)
+  }
+
   try {
-    GraphReader.graphsFromFolder("src/main/resources/indexed-32-node-test-set").foreach(graph => {
-      val (hamiltonian, recursions) = Vandegriend.solve(graph.array)
+    GraphReader.graphsFromFile("src/main/resources/indexed-16-node-test-set.json").foreach(graph => {
+      val (hamiltonian, recursions, time) = Vanhorn.solve(graph.array, maxTime)
+
       println(s"recursions: $recursions hamilton: $hamiltonian")
       val id                 = graph.identifier
       val relativeEdgeAmount = graph.relativeEdgeAmount
@@ -20,23 +28,19 @@ object Main extends App {
         case Some(result) => result.toString
         case None         => "unknown"
       }
-      val fileContent        = s"$id,$relativeEdgeAmount,$writeHamiltonian,$recursions\n"
+      val fileContent        = s"$id,$relativeEdgeAmount,$writeHamiltonian,$recursions,$time\n"
 
       println(fileContent)
       pw.append(fileContent)
     })
-  } finally pw.close()
+  }  finally pw.close()
 
- // println(Cheeseman.solve(GraphReader.graphsFromFile("src/main/resources/indexed-16-node-test-set.json")(702).array, 100000000))
+  // println(getTime)
 
-  // val graph: Array[Array[Int]] = Array(
-  //   Array(0, 1, 1, 1),
-  //   Array(1, 0, 1, 1),
-  //   Array(1, 1, 0, 1),
-  //   Array(1, 1, 1, 0),
-  // )
-  // Rubin2.solve(graph)
-  // src/main/resources/16/3.632/0.graph.json
-  // println(VanHorn.solve(graphFromFile("src/main/resources/16/2.96/0.graph.json")))
-  // println(Martello.solve(graphFromFile("src/main/resources/16/2.96/0.graph.json")))
+  // println(
+  //   Vanhorn.solve(
+  //   GraphReader.graphsFromFolder(
+  //     "src/main/resources/indexed-32-node-test-set")(100).array, maxTime))
+
+  // println(getTime)
 }

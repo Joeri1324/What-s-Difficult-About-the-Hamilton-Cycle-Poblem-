@@ -84,7 +84,7 @@ object GraphReader {
 
 }
 
-object GraphGenerator extends App {
+object GraphGenerator { //extends App {
 
   def genGraph(size: Int, amountOfEdges: Int): Array[Array[Int]] = {
 
@@ -142,8 +142,8 @@ object GraphGenerator extends App {
     Graph(identifier, vertices, edges, degreeMap, graph.size).toJson.prettyPrint
   }
 
-  require(Try(args(0).toInt).isSuccess, "Input graph size should be int")
-  val graphSize      = args(0).toInt
+  // require(Try(args(0).toInt).isSuccess, "Input graph size should be int")
+  val graphSize      = 10 // args(0).toInt
   val amountOfGraphs = 20
   val maxEdges       = {0 to (graphSize - 1)}.reduce(_ + _)
 

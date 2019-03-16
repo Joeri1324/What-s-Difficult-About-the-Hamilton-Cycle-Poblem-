@@ -2,307 +2,231 @@ package graphs
 
 import scala.collection._
 
-case class Edge(val i: Int, val j: Int) {
-  var direction = 0
-  var set       = 0
-
-  def directionUnknown = direction == 0
-  def getSet = set
-  def setRequired = { 
-    if (set != 1) { set = 1; true }
-    else false
-  }
-  def isRequired = set == 1
-  def isUndecided = set == 0
-  def isDeleted = set == 2
-  def setDeleted = { 
-    if (set != 2) { set = 2; true }
-    else false
-  }
-  def isForward = direction == 1
-  def isBackward = direction == 2
-  def setForward = { direction = 1 }
-  def setBackward = { direction = 2 }
-  def isEntering(x: Int) = {
-    if ((x == j && isForward) || (x == i && isBackward)) true
-    else false
-  }
-  def setEntering(x: Int) = {
-    if      (x == j && direction != 1) { direction = 1; true }
-    else if (direction != 2)           { direction = 2; true }
-    else                                                false
-  }
-  def isLeaving(x: Int) = {
-    if ((x == i && isForward) || (x == j && isBackward)) true
-    else false
-  }
-  def setLeaving(x: Int) = {
-    if      (x == j && direction != 2) { direction = 2; true }
-    else if (direction != 1)           { direction = 1; true }
-    else                                                false             
-  }
-
-  override def toString = s"($i, $j) $direction $set" 
-}
-
 object Rubin {
 
-
-  // data structure?
-  // edge and map to edge?
-  // type Edge = (Int, Int, Int, Int) // (Vertex, Vertex, Direction, Set)
-  // direction [0, 1, 2] = [Undecided, Forward, Backward]
-  // set       [0, 1, 2] = [Undecided, Required, Deleted]
-
-  def init(graph: Array[Array[Int]]) = {
-    val edges = { for (i <- graph.indices) yield (i, mutable.Set[Edge]()) } toMap
-
+ /** Transforms graph into a Map for faster lookup
+   *
+   * Returns a Map that for a vertex: Int gets a list of all neighbour
+   * vertices.
+   */
+  def createEdgeMap(graph: Array[Array[Int]]): Map[Int, Set[Int]] = {
     for {
       i <- graph.indices
-      j <- graph.indices
-      if graph(i)(j) == 1 && i > j
-    } { 
-      val edge = new Edge(i, j)
-      edges(i) += edge
-      edges(j) += edge
-    }
-    edges
+    } yield (i -> graph.indices.filter(j => graph(i)(j) == 1).toSet)
+  } toMap 
+  
+  
+  //  { for {
+  //   i <- graph.indices
+  //   j <- graph.indices
+  //   if graph(i)(j) == 1
+  // } yield (i -> j) 
+  // } groupBy (x => x._1) mapValues (x => {x map (x => x._2)} toSet )
+
+  def nextNode(sol: List[Int], checked: Set[Int], in: Map[Int, Set[Int]],
+      out: Map[Int, Set[Int]]): Option[Int] = {
+
+    val degreeMap = in.keys.map(v => (v, in(v).size + out(v).size)).toMap
+    val a = (if (!sol.isEmpty) out(sol.head) else in.keys)
+      .toList
+      .filter(e => !checked.contains(e) && !sol.contains(e))
+      // .sortBy(x => degreeMap(x))
+
+    if (a.isEmpty) None
+    else           Some(a.head)
   }
 
-  def required(edgemap: Map[Int, Set[Edge]]) = {
-    var changed = false
-    for (v <- edgemap.keys) {
-      val edges           = edgemap(v).filterNot(_.isDeleted)
-      val directedEdges   = edges.filterNot(_.directionUnknown)
-      val undirectedEdges = edges.filter(_.directionUnknown)
+  def handleDelete(toDelete: Set[(Int, Int)], in: Map[Int, Set[Int]], out: Map[Int, Set[Int]]): (Map[Int, Set[Int]], Map[Int, Set[Int]]) = {
+    if (toDelete.isEmpty) (in, out)
+    else {
+      val delete = toDelete.head
+      val newIn  = in
+        .updated(delete._2, in(delete._2) - delete._1)
+      val newOut = out
+        .updated(delete._1, out(delete._1) - delete._2)
 
-      // rule 1, i think it doesnt apply when there is an undirected edge still
-      if (undirectedEdges.isEmpty) {
-        // if (v == 9 || v == 11) {
-        //   println("chicken1", edges)
-        // }
-        val forward = directedEdges.filter(_.isLeaving(v))
-        val backward = directedEdges.filter(_.isEntering(v))
-        if (forward.size == 1) { changed = changed || forward.head.setRequired }
-        if (backward.size == 1) { changed = changed || backward.head.setRequired }
-      }
-      
-      // rule 2
-      if (edges.size == 2) {
-        // if (v == 9 || v == 11) {
-        //   println("chicken2", edges, edgemap(v).filter(_.isDeleted))
-        // }
-        edges.foreach(_.setRequired)
-      }
-
-      
+      handleDelete(toDelete.tail, newIn, newOut)
     }
-    changed
   }
 
-  def direction(edgemap: Map[Int, Set[Edge]]) = {
-    var changed = false
-    for (v <- edgemap.keys) {
-      val edges = edgemap(v).filterNot(_.isDeleted)
-      val directedEdges   = edges.filterNot(_.directionUnknown)
-      val undirectedEdges = edges.filter(_.directionUnknown)
+  def pruneTwoNeighbour(in: Map[Int, Set[Int]], out: Map[Int, Set[Int]]) = {
+    val unReq = { for (v <- in.keys; if in(v) == out(v) && in(v).size == 2) yield v }.toSet
 
-      // rule 1
-      val requiredDirected = directedEdges.filter(_.isRequired)
-      if (requiredDirected.size == 1 && requiredDirected.head.isEntering(v)) {
-        undirectedEdges.foreach({ e => changed = changed || e.setLeaving(v) })
-      }
-      if (requiredDirected.size == 1 && requiredDirected.head.isLeaving(v)) {
-        undirectedEdges.foreach(e => { changed = changed || e.setEntering(v) })
-      }
-      // rule 2
-      val undirectedRequired = undirectedEdges.filter(_.isRequired)
-      if (undirectedRequired.size == 1 && undirectedEdges.size == 1) {
-        if (directedEdges.forall(_.isEntering(v))) {
-          changed = changed || undirectedRequired.head.setLeaving(v)
-        }
-        if (directedEdges.forall(_.isEntering(v))) {
-          changed = changed || undirectedRequired.head.setLeaving(v)
-        }
-      }
-    }
-    changed
-  } // (11, 2)
-
-  def deleteCycle(edgemap: Map[Int, Set[Edge]]) = {
-    var changed = false
-    val requiredEdgemap = edgemap.mapValues(edges => edges.filter(_.isRequired))
-    val requiredEdges   = requiredEdgemap.values.flatMap(_.toList).toSet
-    for (edge1 <- requiredEdges) {
-      var path = mutable.MutableList[Edge](edge1)
-      for (edge2 <- requiredEdges; if edge2 != edge1) {
-        if (path.head.isForward && path.head.j == edge2.i && edge2.isLeaving(edge2.i)) {
-          edge2 +=: path
-        }
-        if (path.head.isBackward && path.head.i == edge2.j && edge2.isLeaving(edge2.j)) {
-          edge2 +=: path
-        }
-        if (path.head.directionUnknown && edge2.directionUnknown && 
-           (path.head.i == edge2.j || path.head.j == edge2.i ||
-            path.head.i == edge2.i || path.head.j == edge2.j)) {
-           edge2 +=: path
-        }
-      }
-      if (path.size > 1) {
-        val first = 
-          if (path.tail.head.i != path.head.i && path.head.i != path.tail.head.j) path.head.i
-          else path.head.j
-        val second = 
-          if (path.last.i != path(path.size - 2).i && path.last.i != path(path.size - 2).j) path.last.i
-          else path.last.j
-        for (
-          edge <- edgemap(first).find(e => (e.i == first && e.j == second) || (e.j == first && e.i == second))
-        ) {
-          val del = edge.setDeleted
-          changed = changed || del
-        }
-      }
-    }
-
-    changed
+    for (
+      (v1, n) <- in.toVector;
+      v2      <- n.filterNot(a => unReq.contains(a))
+      if n.filter(a => unReq.contains(a)).size > 1
+    ) yield (v2, v1)
   }
 
-  def delete(edgemap: Map[Int, Set[Edge]]) = {
-    // } // List(10, 7, 2, 11, 5, 9, 4, 3, 6, 8, 1, 0)
-    var changed = false
-    for (v <- edgemap.keys) {
-      val edges    = edgemap(v).filterNot(_.isDeleted)
-      val required = edges.filter(_.isRequired)
-      // why (11, 2) deleted ?
-      // rule 1
-      if (required.size == 2) {
-        val undecided = edges.filter(_.isUndecided)
-        undecided.foreach(e => {
-          changed = changed || e.setDeleted}
-        )
-      }
-      // rule 2
-      val directedRequired = required.filterNot(_.directionUnknown)
-      if (directedRequired.size == 1) {
-        val directedUndecided = edges.filter(_.isUndecided)
-        if (directedRequired.head.isForward) {
-          directedUndecided.foreach(e => if (e.isForward) {
-            changed = changed || e.setDeleted
-          })
-        }
-        if (directedRequired.head.isBackward) {
-          directedUndecided.foreach(e => if (e.isBackward) {
-            changed = changed || e.setDeleted
-          })
-        }
-      }
-    }
-    var changedLoop = deleteCycle(edgemap)
-    changedLoop || changed
+  def pruneDirect(in: Map[Int, Set[Int]], out: Map[Int, Set[Int]]) = {
+    val inDel = for (    // directed required arc entering
+      (v1, n) <- in.toVector;
+      v2      <- n;
+      v3      <- out(v2)
+      if n.size == 1 && v3 != v1
+    ) yield (v2, v3)
+    val outDel = for (
+      (v1, n) <- out.toVector;
+      v2      <- n;
+      v3      <- in(v2)
+      if n.size == 1 && v3 != v1
+    ) yield (v3, v2)
+
+    (inDel ++ outDel).distinct
   }
 
-  def fzes(edges: Map[Int, Set[Edge]]): Boolean = {
-    val requiredEdgemap = edges.mapValues(edges => edges.filter(_.isRequired))
-    val requiredEdges   = requiredEdgemap.values.flatMap(_.toList).toSet
-    for (edge1 <- requiredEdges) {
-      var path = mutable.MutableList[Edge](edge1)
-      for (edge2 <- requiredEdges) {
-        if (edge2 != path.head && 
-            (edge2.i == path.head.i || edge2.i == path.head.j ||
-             edge2.j == path.head.i || edge2.j == path.head.j)) {
-               path += edge2
-             }
-      }
-      if (path.size > 1 && (path.distinct.size < path.size)) return true
+  def walk(left: Int, right: Int, out: Map[Int, Set[Int]], in: Map[Int, Set[Int]], doubles: Set[Int], path: List[Int]): (Int, Int, List[Int]) = {
+    // println("path", path, left, right)
+    if      (!doubles.contains(left) && !doubles.contains(right)) (left, right, path)
+    else if (doubles.contains(right) && out(right).filter(e => !path.contains(e)).size > 0) {
+      val rightOptions = out(right).filter(e => !path.contains(e))  // might be two or one depanding on if the arc is directed
+      walk(left, rightOptions.head, out, in, doubles, rightOptions.head :: path )
     }
-    false
+    else if ( out(left).filter(e => !path.contains(e)).size > 0) {
+      val leftOptions = in(left).filter(e => !path.contains(e))  // might be two or one depanding on if the arc is directed
+      walk(leftOptions.head, right, out, in, doubles,  leftOptions.head :: path)
+    }
+    else (left, right, path)
   }
 
-  def failure(edges: Map[Int, Set[Edge]]): Boolean = {
-    // 1, 2
-    val notDeleted = edges.mapValues(e => e.filterNot(_.isDeleted))
-    val required   = edges.mapValues(e => e.filter(_.isRequired))
-    val f1f2 = notDeleted.values.forall(_.size > 1)
-    val f3 = notDeleted.keys.forall(v => ! {
-      val edgeS = notDeleted(v)
-      (edgeS.forall(e => !e.directionUnknown && e.isEntering(v)) ||
-       edgeS.forall(e => !e.directionUnknown && e.isLeaving(v)))
+  def recurse(doubles: Set[Int], out: Map[Int, Set[Int]], in: Map[Int, Set[Int]], toDelete: Set[(Int, Int)] = Set()): Set[(Int, Int)] = {
+    // println("out", out)
+    // println("in", in)
+    if (doubles.isEmpty) toDelete
+    else {
+      val (left, right, path) = walk(doubles.head, doubles.head, out, in, doubles, List(doubles.head))
+      if (path.size > 2 && path.size < (out.size - 2)) recurse(doubles -- path.toSet, out, in, toDelete + ((left, right)) + ((right, left)))
+      else recurse(doubles -- path.toSet, out, in, toDelete )
+    }
+  }
+
+  def prunePath(in: Map[Int, Set[Int]], out: Map[Int, Set[Int]],
+    toDelete: List[(Int, Int)] = List())  = {
+
+    val trueDouble = { for (v <- in.keys; if in(v) == out(v) && in(v).size == 2) yield v }.toSet
+    val doubles = (
+      { for (v <- in.keys; if in(v) == out(v) && in(v).size == 2) yield v }.toSet ++
+      { for ((v, n) <- in; if n.size == 1) yield v }.toSet ++
+      { for ((v, n) <- out; if n.size == 1) yield v }.toSet)
+
+    val useIn = in.map({ case (v, n) =>
+      if (trueDouble.contains(v) || n.size == 1) (v, n)
+      else                                       (v, Set[Int]())
     })
-    val f4f5 = required.keys.forall(v => ! {
-      ! (required(v).size == 3) && // f5
-      ! (required(v).size == 2 &&
-        ( (required(v).head.isEntering(v) && required(v).tail.head.isEntering(v)) ||
-          (required(v).head.isLeaving(v) && required(v).tail.head.isLeaving(v))))
+    val useOut = out.map({ case (v, n) =>
+      if   (trueDouble.contains(v) || n.size == 1) (v, n)
+      else                                         (v, Set[Int]())
     })
-    val f6 = fzes(edges)
-    f1f2 || f3 || f4f5 || f6
+    // List(7, 9, 6, 4, 2, 5, 0, 8, 3, 11, 1, 12, 13, 10, 14, 15)
+    // println(doubles)
+    // println({ for ((v, n) <- in; if n.size == 1) yield v }.toSet)
+    // println({ for ((v, n) <- out; if n.size == 1) yield v }.toSet)
+    // println()
+    recurse(doubles, useOut, useIn).filter({ case (v1, v2) => out(v1).contains(v2)})
   }
 
-  def setPathRequired(edgemap: Map[Int, Set[Edge]], path: List[Int]) = {
-    for (x <- path.sliding(2)) {
-      for (
-        edge <- edgemap(x(0)).find(e => e.j == x(1) || e.i == x(1))
-      ) {
-        edge.setLeaving(x(1))
-        edge.setRequired
-      }
+  def pruneOneNeighbour(in: Map[Int, Set[Int]], out: Map[Int, Set[Int]]) = {
+    val inDel = for (
+      (v1, n) <- in.toVector;
+      v2      <- n;
+      other   <- out(v2);
+      if (n.size == 1) && other != v1
+    ) yield (v2, other)
+
+    val outDel = for (
+      (v1, n) <- out.toVector;
+      v2      <- n;
+      other   <- in(v2);
+      if (n.size == 1) && other != v1
+    ) yield (other, v2)
+    
+    (inDel ++ outDel).distinct
+  }
+
+  def directionAssignment(in: Map[Int, Set[Int]], out: Map[Int, Set[Int]]) = {
+    // directed assignment doesn't apply since its being incorporated by the directed deletion allready
+
+    // undirected assignment
+    val inDel = for {
+      v <- in.keys;
+      n <- in(v);
+      if in(v) == out(v) && in(v).size == 2 && in(n).filter(_ != v).isEmpty
+    } yield (n, v)
+    val outDel = for {
+      v <- in.keys;
+      n <- out(v);
+      if in(v) == out(v) && in(v).size == 2 && out(n).filter(_ != v).isEmpty
+    } yield (v, n)
+    inDel ++ outDel
+  }
+
+  def prune(in: Map[Int, Set[Int]], out: Map[Int, Set[Int]],
+    deleted: Set[(Int, Int)] = Set()): (Map[Int, Set[Int]], Map[Int, Set[Int]], Set[(Int, Int)]) = {
+    // have to check if path is long enough
+
+    // have to check if this can be done better by using curried functions
+    val delete         = pruneTwoNeighbour(in, out) ++ pruneDirect(in, out) ++ prunePath(in, out) ++ directionAssignment(in, out)
+    val nothingChanged = delete.size == 0 
+    // println("new prune", nothingChanged)
+
+  
+    if (nothingChanged) (in, out, deleted)
+    else                {
+      val (newIn, newOut) = handleDelete(deleted, in, out)
+      prune(newIn, newOut, deleted ++ delete)
     }
   }
 
-  def admissable(edges: Map[Int, Set[Edge]], path: List[Int]) = {
-    setPathRequired(edges, path)
-    var changed = true
-    while (changed) {
-      var changed1 = required(edges)
-      var changed2 = direction(edges)
-      var changed3 = delete(edges)
+  def getChildren(i: Int, sol: List[Int], in: Map[Int, Set[Int]], out: Map[Int, Set[Int]]) = 
+    if (sol.size > 1) (
+      ({ for (v <- in(i); if v != sol.head) yield (v, i) } ++ 
+      { for (v <- out(sol.head); if v != i) yield (sol.head, v)}).toSet
+    )
+    else Set()
 
-      changed = changed1 || changed2 || changed3
-    }
-    failure(edges)
-  }
-
-  def solve(graph: Array[Array[Int]]): (Option[Boolean], Int) = {
-    type Node = (mutable.ListMap[Int, Boolean], List[Int]) 
-
-    val edgess: Map[Int, List[Int]] = { for {
-      i <- graph.indices
-      j <- graph.indices
-      if graph(i)(j) == 1
-    } yield (i -> j) } groupBy (x => x._1) mapValues (x => {x map (x => x._2)} toList )
-
-    var edges = init(graph)
-
-    val start = 0
-    val stack = mutable.Stack[Node]()
-    stack.push((new mutable.ListMap[Int, Boolean], List(start)))
-    val path = mutable.Stack[Int](start)
+  def solve(graph: Array[Array[Int]], maxIter: Int) = {
+    // step 0
+    val startIn     = createEdgeMap(graph)
+    val startOut    = createEdgeMap(graph)
     var iterations = 0
 
-    while (!stack.isEmpty && !(stack.size == graph.size)) {
-      edges = init(graph)
-      iterations = iterations + 1 // increment amount of recursions
-      val childNode = edgess(stack.head._2.head).find(e => !stack.head._1.contains(e) && !stack.head._2.contains(e))
-      childNode match {
-        case None    => { stack pop }
-        case Some(i) if admissable(edges, i :: stack.head._2) => { 
-          stack.head._1.put(i, true)
-          stack.push((new mutable.ListMap[Int, Boolean], i :: stack.head._2)) }
+    def isHamiltonian(sol: List[Int]) = 
+      (sol.size == graph.size && graph(sol.head)(sol.last) == 1)
 
-        case _  => { stack pop }
+    def check(in: Map[Int, Set[Int]], out: Map[Int, Set[Int]]) =
+      in.exists(_._2.size == 0) || out.exists(_._2.size == 0)
+
+    def recurseSolve(sol: List[Int], checked: Set[Int] = Set(),
+      deleted: Set[(Int, Int)] = Set()): Option[Boolean] = {
+      iterations = iterations + 1
+
+      val (curIn, curOut)       = handleDelete(deleted, startIn, startOut)
+      val (in, out, moreDelete) = prune(curIn, curOut)
+
+      if      (iterations > maxIter)    None
+      else if (isHamiltonian(sol))      Some(true)
+      else if (!out.contains(sol.head)) Some(false)
+      // have to double check
+      else if (sol.size == graph.size)  recurseSolve(sol.tail, checked + sol.head, deleted)
+      else {
+        val child = nextNode(sol, checked, in, out)
+        child match {
+          case None                      => Some(false)
+          case Some(i) if check(in, out) => Some(false)
+          case Some(i)                   => {
+            val delChild = getChildren(i, sol, in, out)
+            recurseSolve(i :: sol, deleted = deleted ++ moreDelete ++ delChild + ((i, sol.head))) match {
+              case None        => None
+              case Some(true)  => Some(true)
+              case Some(false) => recurseSolve(sol, checked + i, deleted)
+            }
+          }
+        }
       }
-
-      // check for last one
-      if (stack.size == graph.size && graph(stack.head._2.head)(start) == 0) {
-        stack pop
-      }
-    } // List(10, 7, 2, 11, 5, 9, 4, 3, 6, 8, 1, 0)
-    // println(edgess)
-
-    if (stack.isEmpty) (Option(false), iterations)
-    else               {
-      println( stack.head._2 )
-      (Option(true), iterations)
     }
+
+    val start = List(nextNode(Nil, Set(), startIn, startOut).get)
+    (recurseSolve(start), iterations)
   }
 }

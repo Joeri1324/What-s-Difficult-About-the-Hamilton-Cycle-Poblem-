@@ -1,8 +1,10 @@
 package graphs
 
+import System.nanoTime
+
 trait DepthFirst {
 
-  def chooseNextNode(sol: List[Int], edges: Map[Int, Set[Int]], checked: Set[Int]): Option[Int] 
+  def chooseNextNode(sol: List[Int], edges: Map[Int, Set[Int]], checked: Set[Int]): Option[Int]
 
   def check(edges: Map[Int, Set[Int]]): Boolean
 
@@ -26,9 +28,10 @@ trait DepthFirst {
    * operator. The right hand side of the operator is a recursive call
    * where this time it doesn't check for that child.
    */
-  def solve(graph: Array[Array[Int]], maxIter: Int): (Option[Boolean], Int) = {
+  def solve(graph: Array[Array[Int]], maxTime: Long): (Option[Boolean], Int, Long) = {
     val edges      = createEdgeMap(graph)
     var iterations = 0
+    val startTime  = nanoTime
 
     def isHamiltonian(sol: List[Int]) = 
       (sol.size == graph.size && graph(sol.head)(sol.last) == 1)
@@ -36,9 +39,8 @@ trait DepthFirst {
     def recurseSolve(sol: List[Int], checked: Set[Int] = Set()): Option[Boolean] = {
 
       iterations = iterations + 1
-
-      if      (iterations > maxIter)      None
-      else if (isHamiltonian(sol))        Some(true)
+      if      (nanoTime - startTime > maxTime)      None
+      else if (isHamiltonian(sol))        { println(sol); Some(true) }
       else if (!edges.contains(sol.head)) Some(false)
       else if (sol.size == graph.size)    recurseSolve(sol.tail, checked + sol.head)
       else {
@@ -58,8 +60,9 @@ trait DepthFirst {
       }
     }
 
-    if (check(edges)) (recurseSolve(List(chooseNextNode(Nil, edges, Set()).get)), iterations)
-    else              (Some(false), 1)
+    if (check(edges)) (recurseSolve(List(chooseNextNode(Nil, edges, Set()).get)), iterations,
+                       nanoTime - startTime)
+    else              (Some(false), 1, nanoTime - startTime)
   }
 }
 

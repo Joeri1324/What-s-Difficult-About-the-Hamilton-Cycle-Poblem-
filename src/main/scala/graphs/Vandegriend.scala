@@ -165,7 +165,6 @@ object Vandegriend {
     while (!stack.isEmpty && !(stack.size == graphAsArray.size)) {
       iterations = iterations + 1 // increment amount of recursions
       deleted    = prune(edges)
-
       val childNode = chooseNextNode(edges, stack)
 
       childNode match {
