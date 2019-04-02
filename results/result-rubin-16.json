@@ -1,0 +1,769 @@
+[
+{"id": 0, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 18459541
+, "algorithm": "rubin", "path": null},{"id": 1, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1580727
+, "algorithm": "rubin", "path": null},{"id": 2, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1238429
+, "algorithm": "rubin", "path": null},{"id": 3, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1316596
+, "algorithm": "rubin", "path": null},{"id": 4, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1501400
+, "algorithm": "rubin", "path": null},{"id": 5, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1165211
+, "algorithm": "rubin", "path": null},{"id": 6, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1313606
+, "algorithm": "rubin", "path": null},{"id": 7, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 6305259
+, "algorithm": "rubin", "path": null},{"id": 8, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1579637
+, "algorithm": "rubin", "path": null},{"id": 9, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1266508
+, "algorithm": "rubin", "path": null},{"id": 10, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1211720
+, "algorithm": "rubin", "path": null},{"id": 11, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1636045
+, "algorithm": "rubin", "path": null},{"id": 12, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1606246
+, "algorithm": "rubin", "path": null},{"id": 13, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2263885
+, "algorithm": "rubin", "path": null},{"id": 14, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1348575
+, "algorithm": "rubin", "path": null},{"id": 15, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1182381
+, "algorithm": "rubin", "path": null},{"id": 16, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1169770
+, "algorithm": "rubin", "path": null},{"id": 17, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1208150
+, "algorithm": "rubin", "path": null},{"id": 18, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 920849
+, "algorithm": "rubin", "path": null},{"id": 19, "degree": 0.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 958658
+, "algorithm": "rubin", "path": null},{"id": 20, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1044135
+, "algorithm": "rubin", "path": null},{"id": 21, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1076714
+, "algorithm": "rubin", "path": null},{"id": 22, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 933379
+, "algorithm": "rubin", "path": null},{"id": 23, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 4276197
+, "algorithm": "rubin", "path": null},{"id": 24, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2444198
+, "algorithm": "rubin", "path": null},{"id": 25, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2152978
+, "algorithm": "rubin", "path": null},{"id": 26, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1188290
+, "algorithm": "rubin", "path": null},{"id": 27, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1006167
+, "algorithm": "rubin", "path": null},{"id": 28, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 972058
+, "algorithm": "rubin", "path": null},{"id": 29, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 947829
+, "algorithm": "rubin", "path": null},{"id": 30, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 915380
+, "algorithm": "rubin", "path": null},{"id": 31, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2682031
+, "algorithm": "rubin", "path": null},{"id": 32, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1039945
+, "algorithm": "rubin", "path": null},{"id": 33, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1154241
+, "algorithm": "rubin", "path": null},{"id": 34, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1130262
+, "algorithm": "rubin", "path": null},{"id": 35, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1344995
+, "algorithm": "rubin", "path": null},{"id": 36, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1062045
+, "algorithm": "rubin", "path": null},{"id": 37, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3794903
+, "algorithm": "rubin", "path": null},{"id": 38, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 897720
+, "algorithm": "rubin", "path": null},{"id": 39, "degree": 0.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1035045
+, "algorithm": "rubin", "path": null},{"id": 40, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2616122
+, "algorithm": "rubin", "path": null},{"id": 41, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2878004
+, "algorithm": "rubin", "path": null},{"id": 42, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 991046
+, "algorithm": "rubin", "path": null},{"id": 43, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3352809
+, "algorithm": "rubin", "path": null},{"id": 44, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2579474
+, "algorithm": "rubin", "path": null},{"id": 45, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2640711
+, "algorithm": "rubin", "path": null},{"id": 46, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2067290
+, "algorithm": "rubin", "path": null},{"id": 47, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1743691
+, "algorithm": "rubin", "path": null},{"id": 48, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 942718
+, "algorithm": "rubin", "path": null},{"id": 49, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 877711
+, "algorithm": "rubin", "path": null},{"id": 50, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2106629
+, "algorithm": "rubin", "path": null},{"id": 51, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2030502
+, "algorithm": "rubin", "path": null},{"id": 52, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1949065
+, "algorithm": "rubin", "path": null},{"id": 53, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 743485
+, "algorithm": "rubin", "path": null},{"id": 54, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2039231
+, "algorithm": "rubin", "path": null},{"id": 55, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2174747
+, "algorithm": "rubin", "path": null},{"id": 56, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1525609
+, "algorithm": "rubin", "path": null},{"id": 57, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 450105
+, "algorithm": "rubin", "path": null},{"id": 58, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 484853
+, "algorithm": "rubin", "path": null},{"id": 59, "degree": 0.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1226059
+, "algorithm": "rubin", "path": null},{"id": 60, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1672474
+, "algorithm": "rubin", "path": null},{"id": 61, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1634515
+, "algorithm": "rubin", "path": null},{"id": 62, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1722272
+, "algorithm": "rubin", "path": null},{"id": 63, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1311846
+, "algorithm": "rubin", "path": null},{"id": 64, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1618105
+, "algorithm": "rubin", "path": null},{"id": 65, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1824399
+, "algorithm": "rubin", "path": null},{"id": 66, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1941615
+, "algorithm": "rubin", "path": null},{"id": 67, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2151428
+, "algorithm": "rubin", "path": null},{"id": 68, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 5798925
+, "algorithm": "rubin", "path": null},{"id": 69, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1611366
+, "algorithm": "rubin", "path": null},{"id": 70, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1386983
+, "algorithm": "rubin", "path": null},{"id": 71, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1328865
+, "algorithm": "rubin", "path": null},{"id": 72, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 495333
+, "algorithm": "rubin", "path": null},{"id": 73, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3056677
+, "algorithm": "rubin", "path": null},{"id": 74, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 653388
+, "algorithm": "rubin", "path": null},{"id": 75, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1554988
+, "algorithm": "rubin", "path": null},{"id": 76, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1473471
+, "algorithm": "rubin", "path": null},{"id": 77, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1528869
+, "algorithm": "rubin", "path": null},{"id": 78, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1548818
+, "algorithm": "rubin", "path": null},{"id": 79, "degree": 0.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 634649
+, "algorithm": "rubin", "path": null},{"id": 80, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1524219
+, "algorithm": "rubin", "path": null},{"id": 81, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1464281
+, "algorithm": "rubin", "path": null},{"id": 82, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 588280
+, "algorithm": "rubin", "path": null},{"id": 83, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1520979
+, "algorithm": "rubin", "path": null},{"id": 84, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1734932
+, "algorithm": "rubin", "path": null},{"id": 85, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1647735
+, "algorithm": "rubin", "path": null},{"id": 86, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1525808
+, "algorithm": "rubin", "path": null},{"id": 87, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1486640
+, "algorithm": "rubin", "path": null},{"id": 88, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1454002
+, "algorithm": "rubin", "path": null},{"id": 89, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1477290
+, "algorithm": "rubin", "path": null},{"id": 90, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1381713
+, "algorithm": "rubin", "path": null},{"id": 91, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1412053
+, "algorithm": "rubin", "path": null},{"id": 92, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1497960
+, "algorithm": "rubin", "path": null},{"id": 93, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1368934
+, "algorithm": "rubin", "path": null},{"id": 94, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1353345
+, "algorithm": "rubin", "path": null},{"id": 95, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1376584
+, "algorithm": "rubin", "path": null},{"id": 96, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1525769
+, "algorithm": "rubin", "path": null},{"id": 97, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1638505
+, "algorithm": "rubin", "path": null},{"id": 98, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1599817
+, "algorithm": "rubin", "path": null},{"id": 99, "degree": 0.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1605517
+, "algorithm": "rubin", "path": null},{"id": 100, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1551898
+, "algorithm": "rubin", "path": null},{"id": 101, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1470741
+, "algorithm": "rubin", "path": null},{"id": 102, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1480950
+, "algorithm": "rubin", "path": null},{"id": 103, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1804530
+, "algorithm": "rubin", "path": null},{"id": 104, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1666704
+, "algorithm": "rubin", "path": null},{"id": 105, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1492310
+, "algorithm": "rubin", "path": null},{"id": 106, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1424742
+, "algorithm": "rubin", "path": null},{"id": 107, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1327875
+, "algorithm": "rubin", "path": null},{"id": 108, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1555978
+, "algorithm": "rubin", "path": null},{"id": 109, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1304837
+, "algorithm": "rubin", "path": null},{"id": 110, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1557148
+, "algorithm": "rubin", "path": null},{"id": 111, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1543529
+, "algorithm": "rubin", "path": null},{"id": 112, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1485010
+, "algorithm": "rubin", "path": null},{"id": 113, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1357075
+, "algorithm": "rubin", "path": null},{"id": 114, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1297057
+, "algorithm": "rubin", "path": null},{"id": 115, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1424832
+, "algorithm": "rubin", "path": null},{"id": 116, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1371134
+, "algorithm": "rubin", "path": null},{"id": 117, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1129492
+, "algorithm": "rubin", "path": null},{"id": 118, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1230339
+, "algorithm": "rubin", "path": null},{"id": 119, "degree": 0.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1355865
+, "algorithm": "rubin", "path": null},{"id": 120, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1893426
+, "algorithm": "rubin", "path": null},{"id": 121, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1459831
+, "algorithm": "rubin", "path": null},{"id": 122, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1167611
+, "algorithm": "rubin", "path": null},{"id": 123, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 161412471
+, "algorithm": "rubin", "path": null},{"id": 124, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1373455
+, "algorithm": "rubin", "path": null},{"id": 125, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2000095
+, "algorithm": "rubin", "path": null},{"id": 126, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3034573
+, "algorithm": "rubin", "path": null},{"id": 127, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1833936
+, "algorithm": "rubin", "path": null},{"id": 128, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1651539
+, "algorithm": "rubin", "path": null},{"id": 129, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1325940
+, "algorithm": "rubin", "path": null},{"id": 130, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1282107
+, "algorithm": "rubin", "path": null},{"id": 131, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1246451
+, "algorithm": "rubin", "path": null},{"id": 132, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1217015
+, "algorithm": "rubin", "path": null},{"id": 133, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1221465
+, "algorithm": "rubin", "path": null},{"id": 134, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2044479
+, "algorithm": "rubin", "path": null},{"id": 135, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1058875
+, "algorithm": "rubin", "path": null},{"id": 136, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1199687
+, "algorithm": "rubin", "path": null},{"id": 137, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1260630
+, "algorithm": "rubin", "path": null},{"id": 138, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1307913
+, "algorithm": "rubin", "path": null},{"id": 139, "degree": 0.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1375895
+, "algorithm": "rubin", "path": null},{"id": 140, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2385366
+, "algorithm": "rubin", "path": null},{"id": 141, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2148416
+, "algorithm": "rubin", "path": null},{"id": 142, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1367316
+, "algorithm": "rubin", "path": null},{"id": 143, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2222556
+, "algorithm": "rubin", "path": null},{"id": 144, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1813109
+, "algorithm": "rubin", "path": null},{"id": 145, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1274497
+, "algorithm": "rubin", "path": null},{"id": 146, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1383363
+, "algorithm": "rubin", "path": null},{"id": 147, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1417679
+, "algorithm": "rubin", "path": null},{"id": 148, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1205606
+, "algorithm": "rubin", "path": null},{"id": 149, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1235972
+, "algorithm": "rubin", "path": null},{"id": 150, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1605015
+, "algorithm": "rubin", "path": null},{"id": 151, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1228453
+, "algorithm": "rubin", "path": null},{"id": 152, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1484321
+, "algorithm": "rubin", "path": null},{"id": 153, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1249301
+, "algorithm": "rubin", "path": null},{"id": 154, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1402601
+, "algorithm": "rubin", "path": null},{"id": 155, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1071614
+, "algorithm": "rubin", "path": null},{"id": 156, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 934261
+, "algorithm": "rubin", "path": null},{"id": 157, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1302044
+, "algorithm": "rubin", "path": null},{"id": 158, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2027911
+, "algorithm": "rubin", "path": null},{"id": 159, "degree": 1.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1050416
+, "algorithm": "rubin", "path": null},{"id": 160, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1295804
+, "algorithm": "rubin", "path": null},{"id": 161, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1205236
+, "algorithm": "rubin", "path": null},{"id": 162, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2585960
+, "algorithm": "rubin", "path": null},{"id": 163, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2487363
+, "algorithm": "rubin", "path": null},{"id": 164, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1292825
+, "algorithm": "rubin", "path": null},{"id": 165, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1195327
+, "algorithm": "rubin", "path": null},{"id": 166, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1292715
+, "algorithm": "rubin", "path": null},{"id": 167, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1289696
+, "algorithm": "rubin", "path": null},{"id": 168, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1303333
+, "algorithm": "rubin", "path": null},{"id": 169, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1282776
+, "algorithm": "rubin", "path": null},{"id": 170, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1935953
+, "algorithm": "rubin", "path": null},{"id": 171, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1379314
+, "algorithm": "rubin", "path": null},{"id": 172, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1327091
+, "algorithm": "rubin", "path": null},{"id": 173, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1231883
+, "algorithm": "rubin", "path": null},{"id": 174, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1940012
+, "algorithm": "rubin", "path": null},{"id": 175, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1338419
+, "algorithm": "rubin", "path": null},{"id": 176, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1398322
+, "algorithm": "rubin", "path": null},{"id": 177, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1641511
+, "algorithm": "rubin", "path": null},{"id": 178, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1289225
+, "algorithm": "rubin", "path": null},{"id": 179, "degree": 1.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1218115
+, "algorithm": "rubin", "path": null},{"id": 180, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2073316
+, "algorithm": "rubin", "path": null},{"id": 181, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1221215
+, "algorithm": "rubin", "path": null},{"id": 182, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1453295
+, "algorithm": "rubin", "path": null},{"id": 183, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1136155
+, "algorithm": "rubin", "path": null},{"id": 184, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1308833
+, "algorithm": "rubin", "path": null},{"id": 185, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1454734
+, "algorithm": "rubin", "path": null},{"id": 186, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1363836
+, "algorithm": "rubin", "path": null},{"id": 187, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1278497
+, "algorithm": "rubin", "path": null},{"id": 188, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1236952
+, "algorithm": "rubin", "path": null},{"id": 189, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1434797
+, "algorithm": "rubin", "path": null},{"id": 190, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2234205
+, "algorithm": "rubin", "path": null},{"id": 191, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1492319
+, "algorithm": "rubin", "path": null},{"id": 192, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1168641
+, "algorithm": "rubin", "path": null},{"id": 193, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1203477
+, "algorithm": "rubin", "path": null},{"id": 194, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1246021
+, "algorithm": "rubin", "path": null},{"id": 195, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1295815
+, "algorithm": "rubin", "path": null},{"id": 196, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1181219
+, "algorithm": "rubin", "path": null},{"id": 197, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1165172
+, "algorithm": "rubin", "path": null},{"id": 198, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1096380
+, "algorithm": "rubin", "path": null},{"id": 199, "degree": 1.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 819665
+, "algorithm": "rubin", "path": null},{"id": 200, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1330241
+, "algorithm": "rubin", "path": null},{"id": 201, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1497199
+, "algorithm": "rubin", "path": null},{"id": 202, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 961598
+, "algorithm": "rubin", "path": null},{"id": 203, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1011151
+, "algorithm": "rubin", "path": null},{"id": 204, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2053948
+, "algorithm": "rubin", "path": null},{"id": 205, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1871511
+, "algorithm": "rubin", "path": null},{"id": 206, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1619044
+, "algorithm": "rubin", "path": null},{"id": 207, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1580678
+, "algorithm": "rubin", "path": null},{"id": 208, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 927891
+, "algorithm": "rubin", "path": null},{"id": 209, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1114078
+, "algorithm": "rubin", "path": null},{"id": 210, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 887527
+, "algorithm": "rubin", "path": null},{"id": 211, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1355117
+, "algorithm": "rubin", "path": null},{"id": 212, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 903725
+, "algorithm": "rubin", "path": null},{"id": 213, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1360636
+, "algorithm": "rubin", "path": null},{"id": 214, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1214456
+, "algorithm": "rubin", "path": null},{"id": 215, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2154565
+, "algorithm": "rubin", "path": null},{"id": 216, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1921605
+, "algorithm": "rubin", "path": null},{"id": 217, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1922784
+, "algorithm": "rubin", "path": null},{"id": 218, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1779723
+, "algorithm": "rubin", "path": null},{"id": 219, "degree": 1.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1138315
+, "algorithm": "rubin", "path": null},{"id": 220, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1290495
+, "algorithm": "rubin", "path": null},{"id": 221, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1972039
+, "algorithm": "rubin", "path": null},{"id": 222, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1252650
+, "algorithm": "rubin", "path": null},{"id": 223, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1970579
+, "algorithm": "rubin", "path": null},{"id": 224, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1521706
+, "algorithm": "rubin", "path": null},{"id": 225, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2044629
+, "algorithm": "rubin", "path": null},{"id": 226, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1537983
+, "algorithm": "rubin", "path": null},{"id": 227, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1530395
+, "algorithm": "rubin", "path": null},{"id": 228, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1401401
+, "algorithm": "rubin", "path": null},{"id": 229, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 921742
+, "algorithm": "rubin", "path": null},{"id": 230, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 952519
+, "algorithm": "rubin", "path": null},{"id": 231, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 959748
+, "algorithm": "rubin", "path": null},{"id": 232, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 907744
+, "algorithm": "rubin", "path": null},{"id": 233, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1148164
+, "algorithm": "rubin", "path": null},{"id": 234, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1877041
+, "algorithm": "rubin", "path": null},{"id": 235, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1737098
+, "algorithm": "rubin", "path": null},{"id": 236, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1404691
+, "algorithm": "rubin", "path": null},{"id": 237, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 4891726
+, "algorithm": "rubin", "path": null},{"id": 238, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1947492
+, "algorithm": "rubin", "path": null},{"id": 239, "degree": 1.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1376134
+, "algorithm": "rubin", "path": null},{"id": 240, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2030791
+, "algorithm": "rubin", "path": null},{"id": 241, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1204206
+, "algorithm": "rubin", "path": null},{"id": 242, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1819088
+, "algorithm": "rubin", "path": null},{"id": 243, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1861213
+, "algorithm": "rubin", "path": null},{"id": 244, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1942912
+, "algorithm": "rubin", "path": null},{"id": 245, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1791682
+, "algorithm": "rubin", "path": null},{"id": 246, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1727979
+, "algorithm": "rubin", "path": null},{"id": 247, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1067684
+, "algorithm": "rubin", "path": null},{"id": 248, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 994384
+, "algorithm": "rubin", "path": null},{"id": 249, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1471103
+, "algorithm": "rubin", "path": null},{"id": 250, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1278927
+, "algorithm": "rubin", "path": null},{"id": 251, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1958140
+, "algorithm": "rubin", "path": null},{"id": 252, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1244041
+, "algorithm": "rubin", "path": null},{"id": 253, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1838296
+, "algorithm": "rubin", "path": null},{"id": 254, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1450525
+, "algorithm": "rubin", "path": null},{"id": 255, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2191610
+, "algorithm": "rubin", "path": null},{"id": 256, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1967969
+, "algorithm": "rubin", "path": null},{"id": 257, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2055318
+, "algorithm": "rubin", "path": null},{"id": 258, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1381323
+, "algorithm": "rubin", "path": null},{"id": 259, "degree": 1.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1875001
+, "algorithm": "rubin", "path": null},{"id": 260, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2006294
+, "algorithm": "rubin", "path": null},{"id": 261, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1516796
+, "algorithm": "rubin", "path": null},{"id": 262, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1487020
+, "algorithm": "rubin", "path": null},{"id": 263, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1808500
+, "algorithm": "rubin", "path": null},{"id": 264, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1668887
+, "algorithm": "rubin", "path": null},{"id": 265, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1094980
+, "algorithm": "rubin", "path": null},{"id": 266, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1413640
+, "algorithm": "rubin", "path": null},{"id": 267, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2928447
+, "algorithm": "rubin", "path": null},{"id": 268, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1187909
+, "algorithm": "rubin", "path": null},{"id": 269, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1789522
+, "algorithm": "rubin", "path": null},{"id": 270, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1658068
+, "algorithm": "rubin", "path": null},{"id": 271, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1979907
+, "algorithm": "rubin", "path": null},{"id": 272, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2486413
+, "algorithm": "rubin", "path": null},{"id": 273, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1614094
+, "algorithm": "rubin", "path": null},{"id": 274, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1471872
+, "algorithm": "rubin", "path": null},{"id": 275, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1276368
+, "algorithm": "rubin", "path": null},{"id": 276, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1462554
+, "algorithm": "rubin", "path": null},{"id": 277, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1996776
+, "algorithm": "rubin", "path": null},{"id": 278, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 929692
+, "algorithm": "rubin", "path": null},{"id": 279, "degree": 1.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1079682
+, "algorithm": "rubin", "path": null},{"id": 280, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1572519
+, "algorithm": "rubin", "path": null},{"id": 281, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2986439
+, "algorithm": "rubin", "path": null},{"id": 282, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1168681
+, "algorithm": "rubin", "path": null},{"id": 283, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2172363
+, "algorithm": "rubin", "path": null},{"id": 284, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2226386
+, "algorithm": "rubin", "path": null},{"id": 285, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2454127
+, "algorithm": "rubin", "path": null},{"id": 286, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1221785
+, "algorithm": "rubin", "path": null},{"id": 287, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2406733
+, "algorithm": "rubin", "path": null},{"id": 288, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1923515
+, "algorithm": "rubin", "path": null},{"id": 289, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2761518
+, "algorithm": "rubin", "path": null},{"id": 290, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1690174
+, "algorithm": "rubin", "path": null},{"id": 291, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1556632
+, "algorithm": "rubin", "path": null},{"id": 292, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1274827
+, "algorithm": "rubin", "path": null},{"id": 293, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1353297
+, "algorithm": "rubin", "path": null},{"id": 294, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1414300
+, "algorithm": "rubin", "path": null},{"id": 295, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1279337
+, "algorithm": "rubin", "path": null},{"id": 296, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1905237
+, "algorithm": "rubin", "path": null},{"id": 297, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1107728
+, "algorithm": "rubin", "path": null},{"id": 298, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1940853
+, "algorithm": "rubin", "path": null},{"id": 299, "degree": 1.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2436220
+, "algorithm": "rubin", "path": null},{"id": 300, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1597126
+, "algorithm": "rubin", "path": null},{"id": 301, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 5284846
+, "algorithm": "rubin", "path": null},{"id": 302, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1498559
+, "algorithm": "rubin", "path": null},{"id": 303, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2801213
+, "algorithm": "rubin", "path": null},{"id": 304, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1503398
+, "algorithm": "rubin", "path": null},{"id": 305, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1736299
+, "algorithm": "rubin", "path": null},{"id": 306, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2835449
+, "algorithm": "rubin", "path": null},{"id": 307, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2436749
+, "algorithm": "rubin", "path": null},{"id": 308, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3254565
+, "algorithm": "rubin", "path": null},{"id": 309, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1767474
+, "algorithm": "rubin", "path": null},{"id": 310, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1209216
+, "algorithm": "rubin", "path": null},{"id": 311, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1465483
+, "algorithm": "rubin", "path": null},{"id": 312, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1965939
+, "algorithm": "rubin", "path": null},{"id": 313, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1768194
+, "algorithm": "rubin", "path": null},{"id": 314, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1637971
+, "algorithm": "rubin", "path": null},{"id": 315, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1918416
+, "algorithm": "rubin", "path": null},{"id": 316, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2059928
+, "algorithm": "rubin", "path": null},{"id": 317, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2240385
+, "algorithm": "rubin", "path": null},{"id": 318, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2278390
+, "algorithm": "rubin", "path": null},{"id": 319, "degree": 2.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1949021
+, "algorithm": "rubin", "path": null},{"id": 320, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2811871
+, "algorithm": "rubin", "path": null},{"id": 321, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2299586
+, "algorithm": "rubin", "path": null},{"id": 322, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1713241
+, "algorithm": "rubin", "path": null},{"id": 323, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2017563
+, "algorithm": "rubin", "path": null},{"id": 324, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2144536
+, "algorithm": "rubin", "path": null},{"id": 325, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1724030
+, "algorithm": "rubin", "path": null},{"id": 326, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1928864
+, "algorithm": "rubin", "path": null},{"id": 327, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2121659
+, "algorithm": "rubin", "path": null},{"id": 328, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2433669
+, "algorithm": "rubin", "path": null},{"id": 329, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2411302
+, "algorithm": "rubin", "path": null},{"id": 330, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2371047
+, "algorithm": "rubin", "path": null},{"id": 331, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2128738
+, "algorithm": "rubin", "path": null},{"id": 332, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1137535
+, "algorithm": "rubin", "path": null},{"id": 333, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1512607
+, "algorithm": "rubin", "path": null},{"id": 334, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1801391
+, "algorithm": "rubin", "path": null},{"id": 335, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2491052
+, "algorithm": "rubin", "path": null},{"id": 336, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1633112
+, "algorithm": "rubin", "path": null},{"id": 337, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1715151
+, "algorithm": "rubin", "path": null},{"id": 338, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2197920
+, "algorithm": "rubin", "path": null},{"id": 339, "degree": 2.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1317532
+, "algorithm": "rubin", "path": null},{"id": 340, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1711432
+, "algorithm": "rubin", "path": null},{"id": 341, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 6591169
+, "algorithm": "rubin", "path": null},{"id": 342, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1861823
+, "algorithm": "rubin", "path": null},{"id": 343, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3924140
+, "algorithm": "rubin", "path": null},{"id": 344, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2519169
+, "algorithm": "rubin", "path": null},{"id": 345, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2141477
+, "algorithm": "rubin", "path": null},{"id": 346, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1582319
+, "algorithm": "rubin", "path": null},{"id": 347, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1830636
+, "algorithm": "rubin", "path": null},{"id": 348, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3593062
+, "algorithm": "rubin", "path": null},{"id": 349, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 7723364
+, "algorithm": "rubin", "path": null},{"id": 350, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1535904
+, "algorithm": "rubin", "path": null},{"id": 351, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2980880
+, "algorithm": "rubin", "path": null},{"id": 352, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2929967
+, "algorithm": "rubin", "path": null},{"id": 353, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2216047
+, "algorithm": "rubin", "path": null},{"id": 354, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1536734
+, "algorithm": "rubin", "path": null},{"id": 355, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2486203
+, "algorithm": "rubin", "path": null},{"id": 356, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2589500
+, "algorithm": "rubin", "path": null},{"id": 357, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1396522
+, "algorithm": "rubin", "path": null},{"id": 358, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2477874
+, "algorithm": "rubin", "path": null},{"id": 359, "degree": 2.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2066476
+, "algorithm": "rubin", "path": null},{"id": 360, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2469755
+, "algorithm": "rubin", "path": null},{"id": 361, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1552102
+, "algorithm": "rubin", "path": null},{"id": 362, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3050491
+, "algorithm": "rubin", "path": null},{"id": 363, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1443926
+, "algorithm": "rubin", "path": null},{"id": 364, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2338592
+, "algorithm": "rubin", "path": null},{"id": 365, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2387496
+, "algorithm": "rubin", "path": null},{"id": 366, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1555062
+, "algorithm": "rubin", "path": null},{"id": 367, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1625263
+, "algorithm": "rubin", "path": null},{"id": 368, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1613074
+, "algorithm": "rubin", "path": null},{"id": 369, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1656389
+, "algorithm": "rubin", "path": null},{"id": 370, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2209608
+, "algorithm": "rubin", "path": null},{"id": 371, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1963439
+, "algorithm": "rubin", "path": null},{"id": 372, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2144436
+, "algorithm": "rubin", "path": null},{"id": 373, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2896580
+, "algorithm": "rubin", "path": null},{"id": 374, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2668410
+, "algorithm": "rubin", "path": null},{"id": 375, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1609855
+, "algorithm": "rubin", "path": null},{"id": 376, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1555562
+, "algorithm": "rubin", "path": null},{"id": 377, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2702645
+, "algorithm": "rubin", "path": null},{"id": 378, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3563635
+, "algorithm": "rubin", "path": null},{"id": 379, "degree": 2.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1632312
+, "algorithm": "rubin", "path": null},{"id": 380, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3582343
+, "algorithm": "rubin", "path": null},{"id": 381, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1978387
+, "algorithm": "rubin", "path": null},{"id": 382, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2244883
+, "algorithm": "rubin", "path": null},{"id": 383, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3162456
+, "algorithm": "rubin", "path": null},{"id": 384, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 4519413
+, "algorithm": "rubin", "path": null},{"id": 385, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2514509
+, "algorithm": "rubin", "path": null},{"id": 386, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2108131
+, "algorithm": "rubin", "path": null},{"id": 387, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1634662
+, "algorithm": "rubin", "path": null},{"id": 388, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1601356
+, "algorithm": "rubin", "path": null},{"id": 389, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2651231
+, "algorithm": "rubin", "path": null},{"id": 390, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1567040
+, "algorithm": "rubin", "path": null},{"id": 391, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 925882
+, "algorithm": "rubin", "path": null},{"id": 392, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2122319
+, "algorithm": "rubin", "path": null},{"id": 393, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3024944
+, "algorithm": "rubin", "path": null},{"id": 394, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2882633
+, "algorithm": "rubin", "path": null},{"id": 395, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3176225
+, "algorithm": "rubin", "path": null},{"id": 396, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 9478971
+, "algorithm": "rubin", "path": null},{"id": 397, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1976718
+, "algorithm": "rubin", "path": null},{"id": 398, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2906129
+, "algorithm": "rubin", "path": null},{"id": 399, "degree": 2.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3305449
+, "algorithm": "rubin", "path": null},{"id": 400, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1539624
+, "algorithm": "rubin", "path": null},{"id": 401, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2874604
+, "algorithm": "rubin", "path": null},{"id": 402, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2927287
+, "algorithm": "rubin", "path": null},{"id": 403, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3858138
+, "algorithm": "rubin", "path": null},{"id": 404, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1664377
+, "algorithm": "rubin", "path": null},{"id": 405, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 976875
+, "algorithm": "rubin", "path": null},{"id": 406, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2937795
+, "algorithm": "rubin", "path": null},{"id": 407, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1579938
+, "algorithm": "rubin", "path": null},{"id": 408, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1594927
+, "algorithm": "rubin", "path": null},{"id": 409, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1888329
+, "algorithm": "rubin", "path": null},{"id": 410, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3090606
+, "algorithm": "rubin", "path": null},{"id": 411, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1637011
+, "algorithm": "rubin", "path": null},{"id": 412, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2411862
+, "algorithm": "rubin", "path": null},{"id": 413, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3538029
+, "algorithm": "rubin", "path": null},{"id": 414, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2068306
+, "algorithm": "rubin", "path": null},{"id": 415, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1529514
+, "algorithm": "rubin", "path": null},{"id": 416, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2104092
+, "algorithm": "rubin", "path": null},{"id": 417, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1022959
+, "algorithm": "rubin", "path": null},{"id": 418, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1541543
+, "algorithm": "rubin", "path": null},{"id": 419, "degree": 2.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1612224
+, "algorithm": "rubin", "path": null},{"id": 420, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2341921
+, "algorithm": "rubin", "path": null},{"id": 421, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2576902
+, "algorithm": "rubin", "path": null},{"id": 422, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1706152
+, "algorithm": "rubin", "path": null},{"id": 423, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3757231
+, "algorithm": "rubin", "path": null},{"id": 424, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2801003
+, "algorithm": "rubin", "path": null},{"id": 425, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2294288
+, "algorithm": "rubin", "path": null},{"id": 426, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2433480
+, "algorithm": "rubin", "path": null},{"id": 427, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2119460
+, "algorithm": "rubin", "path": null},{"id": 428, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2953564
+, "algorithm": "rubin", "path": null},{"id": 429, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3310357
+, "algorithm": "rubin", "path": null},{"id": 430, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 960837
+, "algorithm": "rubin", "path": null},{"id": 431, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2256972
+, "algorithm": "rubin", "path": null},{"id": 432, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3246626
+, "algorithm": "rubin", "path": null},{"id": 433, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2222527
+, "algorithm": "rubin", "path": null},{"id": 434, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1586818
+, "algorithm": "rubin", "path": null},{"id": 435, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1005192
+, "algorithm": "rubin", "path": null},{"id": 436, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1576919
+, "algorithm": "rubin", "path": null},{"id": 437, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3329375
+, "algorithm": "rubin", "path": null},{"id": 438, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 5695553
+, "algorithm": "rubin", "path": null},{"id": 439, "degree": 2.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1479321
+, "algorithm": "rubin", "path": null},{"id": 440, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 4005079
+, "algorithm": "rubin", "path": null},{"id": 441, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2181572
+, "algorithm": "rubin", "path": null},{"id": 442, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 4353674
+, "algorithm": "rubin", "path": null},{"id": 443, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1597866
+, "algorithm": "rubin", "path": null},{"id": 444, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2493682
+, "algorithm": "rubin", "path": null},{"id": 445, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3430743
+, "algorithm": "rubin", "path": null},{"id": 446, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1092150
+, "algorithm": "rubin", "path": null},{"id": 447, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3627178
+, "algorithm": "rubin", "path": null},{"id": 448, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1564120
+, "algorithm": "rubin", "path": null},{"id": 449, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3162487
+, "algorithm": "rubin", "path": null},{"id": 450, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2454647
+, "algorithm": "rubin", "path": null},{"id": 451, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2911409
+, "algorithm": "rubin", "path": null},{"id": 452, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1654479
+, "algorithm": "rubin", "path": null},{"id": 453, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1015111
+, "algorithm": "rubin", "path": null},{"id": 454, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1041267
+, "algorithm": "rubin", "path": null},{"id": 455, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3715636
+, "algorithm": "rubin", "path": null},{"id": 456, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 4121005
+, "algorithm": "rubin", "path": null},{"id": 457, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2179512
+, "algorithm": "rubin", "path": null},{"id": 458, "degree": 2.875,  "hamiltonian": false, "iterations": 131, "nanoseconds": 78969498
+, "algorithm": "rubin", "path": null},{"id": 459, "degree": 2.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3386068
+, "algorithm": "rubin", "path": null},{"id": 460, "degree": 3.0,  "hamiltonian": false, "iterations": 35, "nanoseconds": 44734025
+, "algorithm": "rubin", "path": null},{"id": 461, "degree": 3.0,  "hamiltonian": false, "iterations": 7, "nanoseconds": 14844277
+, "algorithm": "rubin", "path": null},{"id": 462, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 730317
+, "algorithm": "rubin", "path": null},{"id": 463, "degree": 3.0,  "hamiltonian": false, "iterations": 11, "nanoseconds": 9862382
+, "algorithm": "rubin", "path": null},{"id": 464, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1861572
+, "algorithm": "rubin", "path": null},{"id": 465, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1973529
+, "algorithm": "rubin", "path": null},{"id": 466, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 665985
+, "algorithm": "rubin", "path": null},{"id": 467, "degree": 3.0,  "hamiltonian": false, "iterations": 3, "nanoseconds": 3287471
+, "algorithm": "rubin", "path": null},{"id": 468, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2216007
+, "algorithm": "rubin", "path": null},{"id": 469, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2045629
+, "algorithm": "rubin", "path": null},{"id": 470, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1114588
+, "algorithm": "rubin", "path": null},{"id": 471, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1558342
+, "algorithm": "rubin", "path": null},{"id": 472, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1606015
+, "algorithm": "rubin", "path": null},{"id": 473, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1256720
+, "algorithm": "rubin", "path": null},{"id": 474, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1935743
+, "algorithm": "rubin", "path": null},{"id": 475, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1640651
+, "algorithm": "rubin", "path": null},{"id": 476, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1790261
+, "algorithm": "rubin", "path": null},{"id": 477, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1784383
+, "algorithm": "rubin", "path": null},{"id": 478, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2185781
+, "algorithm": "rubin", "path": null},{"id": 479, "degree": 3.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2592349
+, "algorithm": "rubin", "path": null},{"id": 480, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3088976
+, "algorithm": "rubin", "path": null},{"id": 481, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1480881
+, "algorithm": "rubin", "path": null},{"id": 482, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1191448
+, "algorithm": "rubin", "path": null},{"id": 483, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3386308
+, "algorithm": "rubin", "path": null},{"id": 484, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2050629
+, "algorithm": "rubin", "path": null},{"id": 485, "degree": 3.125,  "hamiltonian": false, "iterations": 5, "nanoseconds": 9044736
+, "algorithm": "rubin", "path": null},{"id": 486, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1529635
+, "algorithm": "rubin", "path": null},{"id": 487, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2192500
+, "algorithm": "rubin", "path": null},{"id": 488, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 978965
+, "algorithm": "rubin", "path": null},{"id": 489, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1490639
+, "algorithm": "rubin", "path": null},{"id": 490, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1584097
+, "algorithm": "rubin", "path": null},{"id": 491, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 837933
+, "algorithm": "rubin", "path": null},{"id": 492, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 5181018
+, "algorithm": "rubin", "path": null},{"id": 493, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 793299
+, "algorithm": "rubin", "path": null},{"id": 494, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1186478
+, "algorithm": "rubin", "path": null},{"id": 495, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1601256
+, "algorithm": "rubin", "path": null},{"id": 496, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2377386
+, "algorithm": "rubin", "path": null},{"id": 497, "degree": 3.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2490962
+, "algorithm": "rubin", "path": null},{"id": 498, "degree": 3.125,  "hamiltonian": false, "iterations": 53, "nanoseconds": 32162732
+, "algorithm": "rubin", "path": null},{"id": 499, "degree": 3.125,  "hamiltonian": true, "iterations": 122, "nanoseconds": 64770351
+, "algorithm": "rubin", "path": [{"id": 6}, {"id": 5}, {"id": 10}, {"id": 3}, {"id": 14}, {"id": 8}, {"id": 11}, {"id": 1}, {"id": 13}, {"id": 9}, {"id": 7}, {"id": 4}, {"id": 15}, {"id": 12}, {"id": 2}, {"id": 0}]},{"id": 500, "degree": 3.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 715260
+, "algorithm": "rubin", "path": null},{"id": 501, "degree": 3.25,  "hamiltonian": false, "iterations": 11, "nanoseconds": 15639845
+, "algorithm": "rubin", "path": null},{"id": 502, "degree": 3.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3583828
+, "algorithm": "rubin", "path": null},{"id": 503, "degree": 3.25,  "hamiltonian": false, "iterations": 295, "nanoseconds": 147810588
+, "algorithm": "rubin", "path": null},{"id": 504, "degree": 3.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1063146
+, "algorithm": "rubin", "path": null},{"id": 505, "degree": 3.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 690373
+, "algorithm": "rubin", "path": null},{"id": 506, "degree": 3.25,  "hamiltonian": false, "iterations": 3, "nanoseconds": 2671003
+, "algorithm": "rubin", "path": null},{"id": 507, "degree": 3.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 5593824
+, "algorithm": "rubin", "path": null},{"id": 508, "degree": 3.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 809158
+, "algorithm": "rubin", "path": null},{"id": 509, "degree": 3.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2793477
+, "algorithm": "rubin", "path": null},{"id": 510, "degree": 3.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2137690
+, "algorithm": "rubin", "path": null},{"id": 511, "degree": 3.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1432379
+, "algorithm": "rubin", "path": null},{"id": 512, "degree": 3.25,  "hamiltonian": false, "iterations": 83, "nanoseconds": 63978453
+, "algorithm": "rubin", "path": null},{"id": 513, "degree": 3.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1506530
+, "algorithm": "rubin", "path": null},{"id": 514, "degree": 3.25,  "hamiltonian": false, "iterations": 21, "nanoseconds": 25699085
+, "algorithm": "rubin", "path": null},{"id": 515, "degree": 3.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1637993
+, "algorithm": "rubin", "path": null},{"id": 516, "degree": 3.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2113523
+, "algorithm": "rubin", "path": null},{"id": 517, "degree": 3.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2054531
+, "algorithm": "rubin", "path": null},{"id": 518, "degree": 3.25,  "hamiltonian": false, "iterations": 173, "nanoseconds": 111620717
+, "algorithm": "rubin", "path": null},{"id": 519, "degree": 3.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1618286
+, "algorithm": "rubin", "path": null},{"id": 520, "degree": 3.375,  "hamiltonian": false, "iterations": 139, "nanoseconds": 144950729
+, "algorithm": "rubin", "path": null},{"id": 521, "degree": 3.375,  "hamiltonian": false, "iterations": 389, "nanoseconds": 176753035
+, "algorithm": "rubin", "path": null},{"id": 522, "degree": 3.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1549304
+, "algorithm": "rubin", "path": null},{"id": 523, "degree": 3.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1458576
+, "algorithm": "rubin", "path": null},{"id": 524, "degree": 3.375,  "hamiltonian": false, "iterations": 83, "nanoseconds": 64601154
+, "algorithm": "rubin", "path": null},{"id": 525, "degree": 3.375,  "hamiltonian": true, "iterations": 140, "nanoseconds": 75151692
+, "algorithm": "rubin", "path": [{"id": 6}, {"id": 2}, {"id": 7}, {"id": 9}, {"id": 10}, {"id": 15}, {"id": 4}, {"id": 13}, {"id": 12}, {"id": 1}, {"id": 11}, {"id": 14}, {"id": 3}, {"id": 8}, {"id": 5}, {"id": 0}]},{"id": 526, "degree": 3.375,  "hamiltonian": false, "iterations": 103, "nanoseconds": 83192500
+, "algorithm": "rubin", "path": null},{"id": 527, "degree": 3.375,  "hamiltonian": false, "iterations": 745, "nanoseconds": 324987525
+, "algorithm": "rubin", "path": null},{"id": 528, "degree": 3.375,  "hamiltonian": false, "iterations": 253, "nanoseconds": 182220912
+, "algorithm": "rubin", "path": null},{"id": 529, "degree": 3.375,  "hamiltonian": false, "iterations": 77, "nanoseconds": 73370674
+, "algorithm": "rubin", "path": null},{"id": 530, "degree": 3.375,  "hamiltonian": false, "iterations": 37, "nanoseconds": 25192767
+, "algorithm": "rubin", "path": null},{"id": 531, "degree": 3.375,  "hamiltonian": false, "iterations": 147, "nanoseconds": 119118885
+, "algorithm": "rubin", "path": null},{"id": 532, "degree": 3.375,  "hamiltonian": false, "iterations": 193, "nanoseconds": 106175751
+, "algorithm": "rubin", "path": null},{"id": 533, "degree": 3.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2877551
+, "algorithm": "rubin", "path": null},{"id": 534, "degree": 3.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 728789
+, "algorithm": "rubin", "path": null},{"id": 535, "degree": 3.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1458578
+, "algorithm": "rubin", "path": null},{"id": 536, "degree": 3.375,  "hamiltonian": false, "iterations": 63, "nanoseconds": 47893413
+, "algorithm": "rubin", "path": null},{"id": 537, "degree": 3.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1227447
+, "algorithm": "rubin", "path": null},{"id": 538, "degree": 3.375,  "hamiltonian": false, "iterations": 385, "nanoseconds": 192294521
+, "algorithm": "rubin", "path": null},{"id": 539, "degree": 3.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2957605
+, "algorithm": "rubin", "path": null},{"id": 540, "degree": 3.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1501625
+, "algorithm": "rubin", "path": null},{"id": 541, "degree": 3.5,  "hamiltonian": true, "iterations": 72, "nanoseconds": 39571459
+, "algorithm": "rubin", "path": [{"id": 8}, {"id": 3}, {"id": 12}, {"id": 11}, {"id": 14}, {"id": 6}, {"id": 15}, {"id": 2}, {"id": 13}, {"id": 1}, {"id": 5}, {"id": 7}, {"id": 4}, {"id": 9}, {"id": 10}, {"id": 0}]},{"id": 542, "degree": 3.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2676500
+, "algorithm": "rubin", "path": null},{"id": 543, "degree": 3.5,  "hamiltonian": false, "iterations": 469, "nanoseconds": 249331946
+, "algorithm": "rubin", "path": null},{"id": 544, "degree": 3.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1664525
+, "algorithm": "rubin", "path": null},{"id": 545, "degree": 3.5,  "hamiltonian": false, "iterations": 61, "nanoseconds": 34934821
+, "algorithm": "rubin", "path": null},{"id": 546, "degree": 3.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 736639
+, "algorithm": "rubin", "path": null},{"id": 547, "degree": 3.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2131147
+, "algorithm": "rubin", "path": null},{"id": 548, "degree": 3.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2769228
+, "algorithm": "rubin", "path": null},{"id": 549, "degree": 3.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 247809
+, "algorithm": "rubin", "path": null},{"id": 550, "degree": 3.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 635722
+, "algorithm": "rubin", "path": null},{"id": 551, "degree": 3.5,  "hamiltonian": true, "iterations": 32, "nanoseconds": 18013698
+, "algorithm": "rubin", "path": [{"id": 14}, {"id": 6}, {"id": 9}, {"id": 12}, {"id": 11}, {"id": 10}, {"id": 3}, {"id": 13}, {"id": 4}, {"id": 15}, {"id": 2}, {"id": 8}, {"id": 7}, {"id": 1}, {"id": 5}, {"id": 0}]},{"id": 552, "degree": 3.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 715372
+, "algorithm": "rubin", "path": null},{"id": 553, "degree": 3.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1421205
+, "algorithm": "rubin", "path": null},{"id": 554, "degree": 3.5,  "hamiltonian": false, "iterations": 65, "nanoseconds": 48229890
+, "algorithm": "rubin", "path": null},{"id": 555, "degree": 3.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1076477
+, "algorithm": "rubin", "path": null},{"id": 556, "degree": 3.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1036552
+, "algorithm": "rubin", "path": null},{"id": 557, "degree": 3.5,  "hamiltonian": false, "iterations": 2369, "nanoseconds": 985084249
+, "algorithm": "rubin", "path": null},{"id": 558, "degree": 3.5,  "hamiltonian": true, "iterations": 104, "nanoseconds": 38445832
+, "algorithm": "rubin", "path": [{"id": 2}, {"id": 5}, {"id": 9}, {"id": 8}, {"id": 7}, {"id": 3}, {"id": 13}, {"id": 6}, {"id": 15}, {"id": 12}, {"id": 1}, {"id": 11}, {"id": 14}, {"id": 4}, {"id": 10}, {"id": 0}]},{"id": 559, "degree": 3.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1856104
+, "algorithm": "rubin", "path": null},{"id": 560, "degree": 3.625,  "hamiltonian": true, "iterations": 84, "nanoseconds": 37681915
+, "algorithm": "rubin", "path": [{"id": 10}, {"id": 8}, {"id": 9}, {"id": 11}, {"id": 1}, {"id": 12}, {"id": 6}, {"id": 14}, {"id": 7}, {"id": 3}, {"id": 13}, {"id": 2}, {"id": 4}, {"id": 15}, {"id": 5}, {"id": 0}]},{"id": 561, "degree": 3.625,  "hamiltonian": false, "iterations": 245, "nanoseconds": 184313068
+, "algorithm": "rubin", "path": null},{"id": 562, "degree": 3.625,  "hamiltonian": false, "iterations": 225, "nanoseconds": 144208468
+, "algorithm": "rubin", "path": null},{"id": 563, "degree": 3.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 667129
+, "algorithm": "rubin", "path": null},{"id": 564, "degree": 3.625,  "hamiltonian": false, "iterations": 133, "nanoseconds": 75049780
+, "algorithm": "rubin", "path": null},{"id": 565, "degree": 3.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1688774
+, "algorithm": "rubin", "path": null},{"id": 566, "degree": 3.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 693876
+, "algorithm": "rubin", "path": null},{"id": 567, "degree": 3.625,  "hamiltonian": false, "iterations": 3, "nanoseconds": 2393528
+, "algorithm": "rubin", "path": null},{"id": 568, "degree": 3.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 10376947
+, "algorithm": "rubin", "path": null},{"id": 569, "degree": 3.625,  "hamiltonian": false, "iterations": 225, "nanoseconds": 105244404
+, "algorithm": "rubin", "path": null},{"id": 570, "degree": 3.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1156290
+, "algorithm": "rubin", "path": null},{"id": 571, "degree": 3.625,  "hamiltonian": true, "iterations": 250, "nanoseconds": 153651902
+, "algorithm": "rubin", "path": [{"id": 9}, {"id": 10}, {"id": 11}, {"id": 1}, {"id": 12}, {"id": 8}, {"id": 4}, {"id": 5}, {"id": 2}, {"id": 13}, {"id": 7}, {"id": 3}, {"id": 15}, {"id": 6}, {"id": 14}, {"id": 0}]},{"id": 572, "degree": 3.625,  "hamiltonian": false, "iterations": 205, "nanoseconds": 103960210
+, "algorithm": "rubin", "path": null},{"id": 573, "degree": 3.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 743221
+, "algorithm": "rubin", "path": null},{"id": 574, "degree": 3.625,  "hamiltonian": false, "iterations": 661, "nanoseconds": 331713580
+, "algorithm": "rubin", "path": null},{"id": 575, "degree": 3.625,  "hamiltonian": false, "iterations": 73, "nanoseconds": 67035380
+, "algorithm": "rubin", "path": null},{"id": 576, "degree": 3.625,  "hamiltonian": false, "iterations": 189, "nanoseconds": 118192125
+, "algorithm": "rubin", "path": null},{"id": 577, "degree": 3.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3303462
+, "algorithm": "rubin", "path": null},{"id": 578, "degree": 3.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2927938
+, "algorithm": "rubin", "path": null},{"id": 579, "degree": 3.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1008168
+, "algorithm": "rubin", "path": null},{"id": 580, "degree": 3.75,  "hamiltonian": false, "iterations": 3, "nanoseconds": 2890362
+, "algorithm": "rubin", "path": null},{"id": 581, "degree": 3.75,  "hamiltonian": false, "iterations": 781, "nanoseconds": 467755882
+, "algorithm": "rubin", "path": null},{"id": 582, "degree": 3.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1577952
+, "algorithm": "rubin", "path": null},{"id": 583, "degree": 3.75,  "hamiltonian": false, "iterations": 399, "nanoseconds": 239855231
+, "algorithm": "rubin", "path": null},{"id": 584, "degree": 3.75,  "hamiltonian": false, "iterations": 219, "nanoseconds": 145188441
+, "algorithm": "rubin", "path": null},{"id": 585, "degree": 3.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2401074
+, "algorithm": "rubin", "path": null},{"id": 586, "degree": 3.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1885635
+, "algorithm": "rubin", "path": null},{"id": 587, "degree": 3.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1190458
+, "algorithm": "rubin", "path": null},{"id": 588, "degree": 3.75,  "hamiltonian": false, "iterations": 785, "nanoseconds": 407050330
+, "algorithm": "rubin", "path": null},{"id": 589, "degree": 3.75,  "hamiltonian": false, "iterations": 53, "nanoseconds": 32370137
+, "algorithm": "rubin", "path": null},{"id": 590, "degree": 3.75,  "hamiltonian": false, "iterations": 3, "nanoseconds": 3312780
+, "algorithm": "rubin", "path": null},{"id": 591, "degree": 3.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2515154
+, "algorithm": "rubin", "path": null},{"id": 592, "degree": 3.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2862883
+, "algorithm": "rubin", "path": null},{"id": 593, "degree": 3.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 759860
+, "algorithm": "rubin", "path": null},{"id": 594, "degree": 3.75,  "hamiltonian": false, "iterations": 3, "nanoseconds": 4568532
+, "algorithm": "rubin", "path": null},{"id": 595, "degree": 3.75,  "hamiltonian": false, "iterations": 445, "nanoseconds": 243415617
+, "algorithm": "rubin", "path": null},{"id": 596, "degree": 3.75,  "hamiltonian": false, "iterations": 617, "nanoseconds": 232819476
+, "algorithm": "rubin", "path": null},{"id": 597, "degree": 3.75,  "hamiltonian": false, "iterations": 131, "nanoseconds": 72436237
+, "algorithm": "rubin", "path": null},{"id": 598, "degree": 3.75,  "hamiltonian": false, "iterations": 53, "nanoseconds": 36870457
+, "algorithm": "rubin", "path": null},{"id": 599, "degree": 3.75,  "hamiltonian": false, "iterations": 369, "nanoseconds": 159372617
+, "algorithm": "rubin", "path": null},{"id": 600, "degree": 3.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 692878
+, "algorithm": "rubin", "path": null},{"id": 601, "degree": 3.875,  "hamiltonian": false, "iterations": 365, "nanoseconds": 204699810
+, "algorithm": "rubin", "path": null},{"id": 602, "degree": 3.875,  "hamiltonian": false, "iterations": 791, "nanoseconds": 354993507
+, "algorithm": "rubin", "path": null},{"id": 603, "degree": 3.875,  "hamiltonian": true, "iterations": 412, "nanoseconds": 159455460
+, "algorithm": "rubin", "path": [{"id": 11}, {"id": 2}, {"id": 14}, {"id": 9}, {"id": 8}, {"id": 15}, {"id": 6}, {"id": 7}, {"id": 10}, {"id": 12}, {"id": 5}, {"id": 3}, {"id": 4}, {"id": 13}, {"id": 1}, {"id": 0}]},{"id": 604, "degree": 3.875,  "hamiltonian": true, "iterations": 40, "nanoseconds": 22341808
+, "algorithm": "rubin", "path": [{"id": 12}, {"id": 3}, {"id": 6}, {"id": 8}, {"id": 9}, {"id": 13}, {"id": 11}, {"id": 2}, {"id": 14}, {"id": 1}, {"id": 10}, {"id": 7}, {"id": 15}, {"id": 4}, {"id": 5}, {"id": 0}]},{"id": 605, "degree": 3.875,  "hamiltonian": true, "iterations": 154, "nanoseconds": 74693871
+, "algorithm": "rubin", "path": [{"id": 9}, {"id": 8}, {"id": 15}, {"id": 1}, {"id": 13}, {"id": 5}, {"id": 10}, {"id": 12}, {"id": 6}, {"id": 11}, {"id": 4}, {"id": 3}, {"id": 7}, {"id": 2}, {"id": 14}, {"id": 0}]},{"id": 606, "degree": 3.875,  "hamiltonian": false, "iterations": 323, "nanoseconds": 175962698
+, "algorithm": "rubin", "path": null},{"id": 607, "degree": 3.875,  "hamiltonian": false, "iterations": 631, "nanoseconds": 284680122
+, "algorithm": "rubin", "path": null},{"id": 608, "degree": 3.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 735556
+, "algorithm": "rubin", "path": null},{"id": 609, "degree": 3.875,  "hamiltonian": false, "iterations": 97, "nanoseconds": 50271131
+, "algorithm": "rubin", "path": null},{"id": 610, "degree": 3.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 615819
+, "algorithm": "rubin", "path": null},{"id": 611, "degree": 3.875,  "hamiltonian": true, "iterations": 44, "nanoseconds": 14762789
+, "algorithm": "rubin", "path": [{"id": 6}, {"id": 8}, {"id": 14}, {"id": 4}, {"id": 3}, {"id": 11}, {"id": 13}, {"id": 7}, {"id": 12}, {"id": 15}, {"id": 9}, {"id": 2}, {"id": 10}, {"id": 1}, {"id": 5}, {"id": 0}]},{"id": 612, "degree": 3.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 682432
+, "algorithm": "rubin", "path": null},{"id": 613, "degree": 3.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 222505
+, "algorithm": "rubin", "path": null},{"id": 614, "degree": 3.875,  "hamiltonian": false, "iterations": 193, "nanoseconds": 84014826
+, "algorithm": "rubin", "path": null},{"id": 615, "degree": 3.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 256400
+, "algorithm": "rubin", "path": null},{"id": 616, "degree": 3.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1122841
+, "algorithm": "rubin", "path": null},{"id": 617, "degree": 3.875,  "hamiltonian": false, "iterations": 1461, "nanoseconds": 589239230
+, "algorithm": "rubin", "path": null},{"id": 618, "degree": 3.875,  "hamiltonian": true, "iterations": 654, "nanoseconds": 259090869
+, "algorithm": "rubin", "path": [{"id": 11}, {"id": 4}, {"id": 12}, {"id": 2}, {"id": 6}, {"id": 8}, {"id": 3}, {"id": 10}, {"id": 14}, {"id": 7}, {"id": 15}, {"id": 5}, {"id": 13}, {"id": 1}, {"id": 9}, {"id": 0}]},{"id": 619, "degree": 3.875,  "hamiltonian": false, "iterations": 1, "nanoseconds": 246872
+, "algorithm": "rubin", "path": null},{"id": 620, "degree": 4.0,  "hamiltonian": true, "iterations": 456, "nanoseconds": 207213958
+, "algorithm": "rubin", "path": [{"id": 7}, {"id": 5}, {"id": 4}, {"id": 2}, {"id": 12}, {"id": 6}, {"id": 11}, {"id": 8}, {"id": 9}, {"id": 3}, {"id": 10}, {"id": 13}, {"id": 15}, {"id": 1}, {"id": 14}, {"id": 0}]},{"id": 621, "degree": 4.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1061379
+, "algorithm": "rubin", "path": null},{"id": 622, "degree": 4.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3170059
+, "algorithm": "rubin", "path": null},{"id": 623, "degree": 4.0,  "hamiltonian": true, "iterations": 136, "nanoseconds": 62740686
+, "algorithm": "rubin", "path": [{"id": 8}, {"id": 15}, {"id": 4}, {"id": 7}, {"id": 3}, {"id": 11}, {"id": 2}, {"id": 13}, {"id": 12}, {"id": 14}, {"id": 6}, {"id": 10}, {"id": 9}, {"id": 5}, {"id": 1}, {"id": 0}]},{"id": 624, "degree": 4.0,  "hamiltonian": true, "iterations": 184, "nanoseconds": 94004637
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 2}, {"id": 14}, {"id": 6}, {"id": 7}, {"id": 10}, {"id": 9}, {"id": 11}, {"id": 4}, {"id": 12}, {"id": 8}, {"id": 3}, {"id": 5}, {"id": 1}, {"id": 13}, {"id": 0}]},{"id": 625, "degree": 4.0,  "hamiltonian": false, "iterations": 647, "nanoseconds": 333298873
+, "algorithm": "rubin", "path": null},{"id": 626, "degree": 4.0,  "hamiltonian": false, "iterations": 3201, "nanoseconds": 1428002912
+, "algorithm": "rubin", "path": null},{"id": 627, "degree": 4.0,  "hamiltonian": false, "iterations": 59, "nanoseconds": 33227421
+, "algorithm": "rubin", "path": null},{"id": 628, "degree": 4.0,  "hamiltonian": true, "iterations": 188, "nanoseconds": 110169215
+, "algorithm": "rubin", "path": [{"id": 11}, {"id": 6}, {"id": 4}, {"id": 2}, {"id": 15}, {"id": 7}, {"id": 1}, {"id": 12}, {"id": 8}, {"id": 13}, {"id": 10}, {"id": 5}, {"id": 3}, {"id": 9}, {"id": 14}, {"id": 0}]},{"id": 629, "degree": 4.0,  "hamiltonian": false, "iterations": 1119, "nanoseconds": 577089520
+, "algorithm": "rubin", "path": null},{"id": 630, "degree": 4.0,  "hamiltonian": false, "iterations": 477, "nanoseconds": 260723815
+, "algorithm": "rubin", "path": null},{"id": 631, "degree": 4.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 3877293
+, "algorithm": "rubin", "path": null},{"id": 632, "degree": 4.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1525662
+, "algorithm": "rubin", "path": null},{"id": 633, "degree": 4.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2414514
+, "algorithm": "rubin", "path": null},{"id": 634, "degree": 4.0,  "hamiltonian": false, "iterations": 3, "nanoseconds": 3199418
+, "algorithm": "rubin", "path": null},{"id": 635, "degree": 4.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 716081
+, "algorithm": "rubin", "path": null},{"id": 636, "degree": 4.0,  "hamiltonian": false, "iterations": 1, "nanoseconds": 691913
+, "algorithm": "rubin", "path": null},{"id": 637, "degree": 4.0,  "hamiltonian": true, "iterations": 24, "nanoseconds": 11635989
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 11}, {"id": 10}, {"id": 6}, {"id": 4}, {"id": 7}, {"id": 8}, {"id": 9}, {"id": 12}, {"id": 13}, {"id": 3}, {"id": 2}, {"id": 1}, {"id": 5}, {"id": 14}, {"id": 0}]},{"id": 638, "degree": 4.0,  "hamiltonian": false, "iterations": 1529, "nanoseconds": 784391705
+, "algorithm": "rubin", "path": null},{"id": 639, "degree": 4.0,  "hamiltonian": true, "iterations": 116, "nanoseconds": 56141086
+, "algorithm": "rubin", "path": [{"id": 4}, {"id": 12}, {"id": 14}, {"id": 2}, {"id": 3}, {"id": 15}, {"id": 7}, {"id": 8}, {"id": 10}, {"id": 9}, {"id": 6}, {"id": 11}, {"id": 13}, {"id": 1}, {"id": 5}, {"id": 0}]},{"id": 640, "degree": 4.125,  "hamiltonian": true, "iterations": 38, "nanoseconds": 14218901
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 13}, {"id": 9}, {"id": 4}, {"id": 12}, {"id": 10}, {"id": 6}, {"id": 8}, {"id": 1}, {"id": 11}, {"id": 3}, {"id": 14}, {"id": 7}, {"id": 5}, {"id": 2}, {"id": 0}]},{"id": 641, "degree": 4.125,  "hamiltonian": false, "iterations": 549, "nanoseconds": 289820841
+, "algorithm": "rubin", "path": null},{"id": 642, "degree": 4.125,  "hamiltonian": true, "iterations": 434, "nanoseconds": 205293337
+, "algorithm": "rubin", "path": [{"id": 13}, {"id": 8}, {"id": 3}, {"id": 10}, {"id": 4}, {"id": 9}, {"id": 7}, {"id": 11}, {"id": 6}, {"id": 1}, {"id": 14}, {"id": 2}, {"id": 12}, {"id": 15}, {"id": 5}, {"id": 0}]},{"id": 643, "degree": 4.125,  "hamiltonian": true, "iterations": 44, "nanoseconds": 14869871
+, "algorithm": "rubin", "path": [{"id": 6}, {"id": 11}, {"id": 2}, {"id": 7}, {"id": 4}, {"id": 12}, {"id": 8}, {"id": 15}, {"id": 9}, {"id": 14}, {"id": 13}, {"id": 10}, {"id": 1}, {"id": 3}, {"id": 5}, {"id": 0}]},{"id": 644, "degree": 4.125,  "hamiltonian": false, "iterations": 137, "nanoseconds": 106542560
+, "algorithm": "rubin", "path": null},{"id": 645, "degree": 4.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 248503
+, "algorithm": "rubin", "path": null},{"id": 646, "degree": 4.125,  "hamiltonian": false, "iterations": 191, "nanoseconds": 133116566
+, "algorithm": "rubin", "path": null},{"id": 647, "degree": 4.125,  "hamiltonian": false, "iterations": 145, "nanoseconds": 66283884
+, "algorithm": "rubin", "path": null},{"id": 648, "degree": 4.125,  "hamiltonian": true, "iterations": 186, "nanoseconds": 108252883
+, "algorithm": "rubin", "path": [{"id": 10}, {"id": 7}, {"id": 4}, {"id": 13}, {"id": 14}, {"id": 12}, {"id": 1}, {"id": 11}, {"id": 8}, {"id": 2}, {"id": 9}, {"id": 3}, {"id": 15}, {"id": 6}, {"id": 5}, {"id": 0}]},{"id": 649, "degree": 4.125,  "hamiltonian": false, "iterations": 3343, "nanoseconds": 1451881800
+, "algorithm": "rubin", "path": null},{"id": 650, "degree": 4.125,  "hamiltonian": false, "iterations": 3, "nanoseconds": 2522771
+, "algorithm": "rubin", "path": null},{"id": 651, "degree": 4.125,  "hamiltonian": false, "iterations": 8441, "nanoseconds": 3316056135
+, "algorithm": "rubin", "path": null},{"id": 652, "degree": 4.125,  "hamiltonian": false, "iterations": 557, "nanoseconds": 316853477
+, "algorithm": "rubin", "path": null},{"id": 653, "degree": 4.125,  "hamiltonian": false, "iterations": 1133, "nanoseconds": 481349037
+, "algorithm": "rubin", "path": null},{"id": 654, "degree": 4.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1101768
+, "algorithm": "rubin", "path": null},{"id": 655, "degree": 4.125,  "hamiltonian": true, "iterations": 300, "nanoseconds": 159651247
+, "algorithm": "rubin", "path": [{"id": 14}, {"id": 9}, {"id": 6}, {"id": 7}, {"id": 4}, {"id": 13}, {"id": 3}, {"id": 11}, {"id": 12}, {"id": 2}, {"id": 8}, {"id": 10}, {"id": 15}, {"id": 1}, {"id": 5}, {"id": 0}]},{"id": 656, "degree": 4.125,  "hamiltonian": true, "iterations": 54, "nanoseconds": 31296129
+, "algorithm": "rubin", "path": [{"id": 11}, {"id": 12}, {"id": 8}, {"id": 1}, {"id": 6}, {"id": 3}, {"id": 10}, {"id": 2}, {"id": 13}, {"id": 9}, {"id": 7}, {"id": 15}, {"id": 4}, {"id": 14}, {"id": 5}, {"id": 0}]},{"id": 657, "degree": 4.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2045482
+, "algorithm": "rubin", "path": null},{"id": 658, "degree": 4.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 857302
+, "algorithm": "rubin", "path": null},{"id": 659, "degree": 4.125,  "hamiltonian": false, "iterations": 1, "nanoseconds": 739894
+, "algorithm": "rubin", "path": null},{"id": 660, "degree": 4.25,  "hamiltonian": false, "iterations": 1195, "nanoseconds": 541736803
+, "algorithm": "rubin", "path": null},{"id": 661, "degree": 4.25,  "hamiltonian": true, "iterations": 512, "nanoseconds": 224512697
+, "algorithm": "rubin", "path": [{"id": 11}, {"id": 4}, {"id": 8}, {"id": 6}, {"id": 7}, {"id": 13}, {"id": 10}, {"id": 14}, {"id": 12}, {"id": 3}, {"id": 5}, {"id": 2}, {"id": 15}, {"id": 1}, {"id": 9}, {"id": 0}]},{"id": 662, "degree": 4.25,  "hamiltonian": false, "iterations": 3, "nanoseconds": 2611176
+, "algorithm": "rubin", "path": null},{"id": 663, "degree": 4.25,  "hamiltonian": true, "iterations": 2208, "nanoseconds": 823180230
+, "algorithm": "rubin", "path": [{"id": 12}, {"id": 7}, {"id": 3}, {"id": 9}, {"id": 14}, {"id": 10}, {"id": 4}, {"id": 13}, {"id": 8}, {"id": 6}, {"id": 5}, {"id": 11}, {"id": 2}, {"id": 15}, {"id": 1}, {"id": 0}]},{"id": 664, "degree": 4.25,  "hamiltonian": false, "iterations": 6813, "nanoseconds": 2648712771
+, "algorithm": "rubin", "path": null},{"id": 665, "degree": 4.25,  "hamiltonian": true, "iterations": 110, "nanoseconds": 38934434
+, "algorithm": "rubin", "path": [{"id": 7}, {"id": 14}, {"id": 9}, {"id": 11}, {"id": 13}, {"id": 8}, {"id": 6}, {"id": 4}, {"id": 12}, {"id": 3}, {"id": 15}, {"id": 1}, {"id": 5}, {"id": 2}, {"id": 10}, {"id": 0}]},{"id": 666, "degree": 4.25,  "hamiltonian": false, "iterations": 8845, "nanoseconds": 3924472663
+, "algorithm": "rubin", "path": null},{"id": 667, "degree": 4.25,  "hamiltonian": true, "iterations": 892, "nanoseconds": 496787660
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 1}, {"id": 13}, {"id": 2}, {"id": 11}, {"id": 14}, {"id": 4}, {"id": 12}, {"id": 5}, {"id": 9}, {"id": 3}, {"id": 7}, {"id": 6}, {"id": 8}, {"id": 10}, {"id": 0}]},{"id": 668, "degree": 4.25,  "hamiltonian": false, "iterations": 1865, "nanoseconds": 908825977
+, "algorithm": "rubin", "path": null},{"id": 669, "degree": 4.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 725313
+, "algorithm": "rubin", "path": null},{"id": 670, "degree": 4.25,  "hamiltonian": false, "iterations": 8637, "nanoseconds": 3854162267
+, "algorithm": "rubin", "path": null},{"id": 671, "degree": 4.25,  "hamiltonian": false, "iterations": 119, "nanoseconds": 104150891
+, "algorithm": "rubin", "path": null},{"id": 672, "degree": 4.25,  "hamiltonian": true, "iterations": 338, "nanoseconds": 123994711
+, "algorithm": "rubin", "path": [{"id": 11}, {"id": 6}, {"id": 3}, {"id": 15}, {"id": 4}, {"id": 7}, {"id": 13}, {"id": 5}, {"id": 8}, {"id": 1}, {"id": 14}, {"id": 12}, {"id": 2}, {"id": 9}, {"id": 10}, {"id": 0}]},{"id": 673, "degree": 4.25,  "hamiltonian": true, "iterations": 56, "nanoseconds": 17953636
+, "algorithm": "rubin", "path": [{"id": 4}, {"id": 2}, {"id": 8}, {"id": 15}, {"id": 3}, {"id": 11}, {"id": 7}, {"id": 9}, {"id": 12}, {"id": 6}, {"id": 14}, {"id": 13}, {"id": 5}, {"id": 1}, {"id": 10}, {"id": 0}]},{"id": 674, "degree": 4.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 719197
+, "algorithm": "rubin", "path": null},{"id": 675, "degree": 4.25,  "hamiltonian": false, "iterations": 191, "nanoseconds": 118848444
+, "algorithm": "rubin", "path": null},{"id": 676, "degree": 4.25,  "hamiltonian": false, "iterations": 5223, "nanoseconds": 2334532590
+, "algorithm": "rubin", "path": null},{"id": 677, "degree": 4.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 2238119
+, "algorithm": "rubin", "path": null},{"id": 678, "degree": 4.25,  "hamiltonian": false, "iterations": 945, "nanoseconds": 530324046
+, "algorithm": "rubin", "path": null},{"id": 679, "degree": 4.25,  "hamiltonian": false, "iterations": 1, "nanoseconds": 1215736
+, "algorithm": "rubin", "path": null},{"id": 680, "degree": 4.375,  "hamiltonian": true, "iterations": 196, "nanoseconds": 101724977
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 2}, {"id": 9}, {"id": 14}, {"id": 6}, {"id": 4}, {"id": 8}, {"id": 3}, {"id": 11}, {"id": 13}, {"id": 10}, {"id": 12}, {"id": 7}, {"id": 1}, {"id": 5}, {"id": 0}]},{"id": 681, "degree": 4.375,  "hamiltonian": true, "iterations": 228, "nanoseconds": 94347959
+, "algorithm": "rubin", "path": [{"id": 11}, {"id": 5}, {"id": 15}, {"id": 14}, {"id": 4}, {"id": 12}, {"id": 8}, {"id": 1}, {"id": 13}, {"id": 7}, {"id": 3}, {"id": 9}, {"id": 6}, {"id": 2}, {"id": 10}, {"id": 0}]},{"id": 682, "degree": 4.375,  "hamiltonian": false, "iterations": 3, "nanoseconds": 2954527
+, "algorithm": "rubin", "path": null},{"id": 683, "degree": 4.375,  "hamiltonian": true, "iterations": 250, "nanoseconds": 125752149
+, "algorithm": "rubin", "path": [{"id": 14}, {"id": 5}, {"id": 15}, {"id": 2}, {"id": 12}, {"id": 6}, {"id": 13}, {"id": 9}, {"id": 8}, {"id": 3}, {"id": 7}, {"id": 11}, {"id": 1}, {"id": 4}, {"id": 10}, {"id": 0}]},{"id": 684, "degree": 4.375,  "hamiltonian": true, "iterations": 76, "nanoseconds": 32959937
+, "algorithm": "rubin", "path": [{"id": 12}, {"id": 8}, {"id": 2}, {"id": 15}, {"id": 1}, {"id": 14}, {"id": 3}, {"id": 13}, {"id": 9}, {"id": 4}, {"id": 11}, {"id": 6}, {"id": 7}, {"id": 10}, {"id": 5}, {"id": 0}]},{"id": 685, "degree": 4.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 728568
+, "algorithm": "rubin", "path": null},{"id": 686, "degree": 4.375,  "hamiltonian": true, "iterations": 2078, "nanoseconds": 766310329
+, "algorithm": "rubin", "path": [{"id": 7}, {"id": 4}, {"id": 14}, {"id": 1}, {"id": 12}, {"id": 6}, {"id": 2}, {"id": 8}, {"id": 10}, {"id": 5}, {"id": 13}, {"id": 3}, {"id": 11}, {"id": 15}, {"id": 9}, {"id": 0}]},{"id": 687, "degree": 4.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 380668
+, "algorithm": "rubin", "path": null},{"id": 688, "degree": 4.375,  "hamiltonian": false, "iterations": 5931, "nanoseconds": 2726285466
+, "algorithm": "rubin", "path": null},{"id": 689, "degree": 4.375,  "hamiltonian": true, "iterations": 604, "nanoseconds": 282281100
+, "algorithm": "rubin", "path": [{"id": 11}, {"id": 12}, {"id": 1}, {"id": 7}, {"id": 9}, {"id": 13}, {"id": 6}, {"id": 14}, {"id": 3}, {"id": 15}, {"id": 5}, {"id": 2}, {"id": 8}, {"id": 4}, {"id": 10}, {"id": 0}]},{"id": 690, "degree": 4.375,  "hamiltonian": false, "iterations": 965, "nanoseconds": 513059277
+, "algorithm": "rubin", "path": null},{"id": 691, "degree": 4.375,  "hamiltonian": false, "iterations": 3165, "nanoseconds": 1473038413
+, "algorithm": "rubin", "path": null},{"id": 692, "degree": 4.375,  "hamiltonian": false, "iterations": 483, "nanoseconds": 271452291
+, "algorithm": "rubin", "path": null},{"id": 693, "degree": 4.375,  "hamiltonian": false, "iterations": 3211, "nanoseconds": 1479434980
+, "algorithm": "rubin", "path": null},{"id": 694, "degree": 4.375,  "hamiltonian": false, "iterations": 9505, "nanoseconds": 4416719922
+, "algorithm": "rubin", "path": null},{"id": 695, "degree": 4.375,  "hamiltonian": false, "iterations": 527, "nanoseconds": 282813676
+, "algorithm": "rubin", "path": null},{"id": 696, "degree": 4.375,  "hamiltonian": true, "iterations": 32, "nanoseconds": 15100435
+, "algorithm": "rubin", "path": [{"id": 11}, {"id": 3}, {"id": 13}, {"id": 8}, {"id": 10}, {"id": 6}, {"id": 7}, {"id": 15}, {"id": 2}, {"id": 12}, {"id": 4}, {"id": 14}, {"id": 1}, {"id": 9}, {"id": 5}, {"id": 0}]},{"id": 697, "degree": 4.375,  "hamiltonian": false, "iterations": 1, "nanoseconds": 358372
+, "algorithm": "rubin", "path": null},{"id": 698, "degree": 4.375,  "hamiltonian": true, "iterations": 854, "nanoseconds": 428105650
+, "algorithm": "rubin", "path": [{"id": 12}, {"id": 1}, {"id": 11}, {"id": 2}, {"id": 10}, {"id": 4}, {"id": 13}, {"id": 8}, {"id": 3}, {"id": 7}, {"id": 9}, {"id": 14}, {"id": 6}, {"id": 15}, {"id": 5}, {"id": 0}]},{"id": 699, "degree": 4.375,  "hamiltonian": false, "iterations": 2567, "nanoseconds": 1214972288
+, "algorithm": "rubin", "path": null},{"id": 700, "degree": 4.5,  "hamiltonian": true, "iterations": 80, "nanoseconds": 48545983
+, "algorithm": "rubin", "path": [{"id": 14}, {"id": 7}, {"id": 9}, {"id": 4}, {"id": 8}, {"id": 3}, {"id": 6}, {"id": 2}, {"id": 13}, {"id": 5}, {"id": 12}, {"id": 15}, {"id": 11}, {"id": 1}, {"id": 10}, {"id": 0}]},{"id": 701, "degree": 4.5,  "hamiltonian": false, "iterations": 489, "nanoseconds": 250395986
+, "algorithm": "rubin", "path": null},{"id": 702, "degree": 4.5,  "hamiltonian": true, "iterations": 864, "nanoseconds": 439902827
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 2}, {"id": 11}, {"id": 5}, {"id": 9}, {"id": 6}, {"id": 10}, {"id": 1}, {"id": 13}, {"id": 4}, {"id": 12}, {"id": 7}, {"id": 8}, {"id": 3}, {"id": 14}, {"id": 0}]},{"id": 703, "degree": 4.5,  "hamiltonian": false, "iterations": 1, "nanoseconds": 278649
+, "algorithm": "rubin", "path": null},{"id": 704, "degree": 4.5,  "hamiltonian": false, "iterations": 3, "nanoseconds": 1754439
+, "algorithm": "rubin", "path": null},{"id": 705, "degree": 4.5,  "hamiltonian": true, "iterations": 126, "nanoseconds": 52852645
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 6}, {"id": 14}, {"id": 12}, {"id": 3}, {"id": 9}, {"id": 1}, {"id": 4}, {"id": 13}, {"id": 8}, {"id": 11}, {"id": 7}, {"id": 2}, {"id": 10}, {"id": 5}, {"id": 0}]},{"id": 706, "degree": 4.5,  "hamiltonian": true, "iterations": 52, "nanoseconds": 22034339
+, "algorithm": "rubin", "path": [{"id": 6}, {"id": 3}, {"id": 4}, {"id": 15}, {"id": 1}, {"id": 11}, {"id": 13}, {"id": 12}, {"id": 7}, {"id": 9}, {"id": 8}, {"id": 14}, {"id": 2}, {"id": 10}, {"id": 5}, {"id": 0}]},{"id": 707, "degree": 4.5,  "hamiltonian": true, "iterations": 2932, "nanoseconds": 1282948409
+, "algorithm": "rubin", "path": [{"id": 11}, {"id": 7}, {"id": 14}, {"id": 9}, {"id": 3}, {"id": 13}, {"id": 4}, {"id": 6}, {"id": 2}, {"id": 8}, {"id": 15}, {"id": 5}, {"id": 12}, {"id": 10}, {"id": 1}, {"id": 0}]},{"id": 708, "degree": 4.5,  "hamiltonian": true, "iterations": 24, "nanoseconds": 9307804
+, "algorithm": "rubin", "path": [{"id": 7}, {"id": 11}, {"id": 6}, {"id": 2}, {"id": 13}, {"id": 9}, {"id": 15}, {"id": 12}, {"id": 3}, {"id": 8}, {"id": 10}, {"id": 1}, {"id": 4}, {"id": 14}, {"id": 5}, {"id": 0}]},{"id": 709, "degree": 4.5,  "hamiltonian": true, "iterations": 800, "nanoseconds": 336927772
+, "algorithm": "rubin", "path": [{"id": 13}, {"id": 11}, {"id": 4}, {"id": 12}, {"id": 8}, {"id": 9}, {"id": 15}, {"id": 6}, {"id": 3}, {"id": 2}, {"id": 7}, {"id": 10}, {"id": 14}, {"id": 1}, {"id": 5}, {"id": 0}]},{"id": 710, "degree": 4.5,  "hamiltonian": true, "iterations": 170, "nanoseconds": 60965430
+, "algorithm": "rubin", "path": [{"id": 8}, {"id": 3}, {"id": 13}, {"id": 1}, {"id": 7}, {"id": 2}, {"id": 12}, {"id": 15}, {"id": 9}, {"id": 11}, {"id": 10}, {"id": 4}, {"id": 14}, {"id": 5}, {"id": 6}, {"id": 0}]},{"id": 711, "degree": 4.5,  "hamiltonian": true, "iterations": 1756, "nanoseconds": 687786802
+, "algorithm": "rubin", "path": [{"id": 13}, {"id": 6}, {"id": 14}, {"id": 12}, {"id": 3}, {"id": 2}, {"id": 7}, {"id": 8}, {"id": 9}, {"id": 11}, {"id": 5}, {"id": 1}, {"id": 4}, {"id": 15}, {"id": 10}, {"id": 0}]},{"id": 712, "degree": 4.5,  "hamiltonian": true, "iterations": 570, "nanoseconds": 271980657
+, "algorithm": "rubin", "path": [{"id": 13}, {"id": 3}, {"id": 14}, {"id": 4}, {"id": 1}, {"id": 9}, {"id": 7}, {"id": 8}, {"id": 6}, {"id": 10}, {"id": 2}, {"id": 12}, {"id": 11}, {"id": 15}, {"id": 5}, {"id": 0}]},{"id": 713, "degree": 4.5,  "hamiltonian": true, "iterations": 846, "nanoseconds": 307558937
+, "algorithm": "rubin", "path": [{"id": 14}, {"id": 12}, {"id": 10}, {"id": 1}, {"id": 6}, {"id": 4}, {"id": 7}, {"id": 13}, {"id": 2}, {"id": 15}, {"id": 9}, {"id": 11}, {"id": 3}, {"id": 8}, {"id": 5}, {"id": 0}]},{"id": 714, "degree": 4.5,  "hamiltonian": true, "iterations": 576, "nanoseconds": 292953057
+, "algorithm": "rubin", "path": [{"id": 14}, {"id": 4}, {"id": 7}, {"id": 8}, {"id": 9}, {"id": 5}, {"id": 11}, {"id": 1}, {"id": 12}, {"id": 3}, {"id": 13}, {"id": 15}, {"id": 2}, {"id": 6}, {"id": 10}, {"id": 0}]},{"id": 715, "degree": 4.5,  "hamiltonian": true, "iterations": 1506, "nanoseconds": 604886770
+, "algorithm": "rubin", "path": [{"id": 3}, {"id": 11}, {"id": 8}, {"id": 13}, {"id": 6}, {"id": 15}, {"id": 1}, {"id": 12}, {"id": 7}, {"id": 4}, {"id": 9}, {"id": 5}, {"id": 2}, {"id": 14}, {"id": 10}, {"id": 0}]},{"id": 716, "degree": 4.5,  "hamiltonian": null, "iterations": 26302, "nanoseconds": 10000113743
+, "algorithm": "rubin", "path": null},{"id": 717, "degree": 4.5,  "hamiltonian": true, "iterations": 1006, "nanoseconds": 505399844
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 6}, {"id": 14}, {"id": 1}, {"id": 8}, {"id": 11}, {"id": 4}, {"id": 7}, {"id": 12}, {"id": 3}, {"id": 2}, {"id": 9}, {"id": 5}, {"id": 13}, {"id": 10}, {"id": 0}]},{"id": 718, "degree": 4.5,  "hamiltonian": true, "iterations": 442, "nanoseconds": 221190016
+, "algorithm": "rubin", "path": [{"id": 14}, {"id": 7}, {"id": 13}, {"id": 8}, {"id": 2}, {"id": 12}, {"id": 4}, {"id": 11}, {"id": 9}, {"id": 6}, {"id": 1}, {"id": 5}, {"id": 15}, {"id": 3}, {"id": 10}, {"id": 0}]},{"id": 719, "degree": 4.5,  "hamiltonian": true, "iterations": 44, "nanoseconds": 22634184
+, "algorithm": "rubin", "path": [{"id": 9}, {"id": 6}, {"id": 7}, {"id": 14}, {"id": 4}, {"id": 12}, {"id": 15}, {"id": 13}, {"id": 8}, {"id": 11}, {"id": 2}, {"id": 3}, {"id": 10}, {"id": 1}, {"id": 5}, {"id": 0}]},{"id": 720, "degree": 4.625,  "hamiltonian": true, "iterations": 18, "nanoseconds": 10866367
+, "algorithm": "rubin", "path": [{"id": 14}, {"id": 11}, {"id": 6}, {"id": 15}, {"id": 7}, {"id": 12}, {"id": 4}, {"id": 2}, {"id": 8}, {"id": 3}, {"id": 13}, {"id": 9}, {"id": 1}, {"id": 5}, {"id": 10}, {"id": 0}]},{"id": 721, "degree": 4.625,  "hamiltonian": false, "iterations": 1363, "nanoseconds": 862129333
+, "algorithm": "rubin", "path": null},{"id": 722, "degree": 4.625,  "hamiltonian": true, "iterations": 388, "nanoseconds": 173686295
+, "algorithm": "rubin", "path": [{"id": 13}, {"id": 8}, {"id": 4}, {"id": 9}, {"id": 2}, {"id": 5}, {"id": 14}, {"id": 11}, {"id": 3}, {"id": 15}, {"id": 12}, {"id": 7}, {"id": 1}, {"id": 6}, {"id": 10}, {"id": 0}]},{"id": 723, "degree": 4.625,  "hamiltonian": false, "iterations": 3, "nanoseconds": 1717838
+, "algorithm": "rubin", "path": null},{"id": 724, "degree": 4.625,  "hamiltonian": true, "iterations": 68, "nanoseconds": 35541657
+, "algorithm": "rubin", "path": [{"id": 8}, {"id": 9}, {"id": 15}, {"id": 12}, {"id": 2}, {"id": 13}, {"id": 3}, {"id": 11}, {"id": 4}, {"id": 7}, {"id": 10}, {"id": 6}, {"id": 5}, {"id": 1}, {"id": 14}, {"id": 0}]},{"id": 725, "degree": 4.625,  "hamiltonian": false, "iterations": 1, "nanoseconds": 772330
+, "algorithm": "rubin", "path": null},{"id": 726, "degree": 4.625,  "hamiltonian": null, "iterations": 25479, "nanoseconds": 10000055909
+, "algorithm": "rubin", "path": null},{"id": 727, "degree": 4.625,  "hamiltonian": true, "iterations": 460, "nanoseconds": 164201573
+, "algorithm": "rubin", "path": [{"id": 11}, {"id": 2}, {"id": 15}, {"id": 14}, {"id": 3}, {"id": 4}, {"id": 13}, {"id": 6}, {"id": 12}, {"id": 8}, {"id": 10}, {"id": 7}, {"id": 9}, {"id": 1}, {"id": 5}, {"id": 0}]},{"id": 728, "degree": 4.625,  "hamiltonian": true, "iterations": 230, "nanoseconds": 90854538
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 5}, {"id": 14}, {"id": 11}, {"id": 3}, {"id": 4}, {"id": 13}, {"id": 6}, {"id": 8}, {"id": 12}, {"id": 9}, {"id": 7}, {"id": 1}, {"id": 2}, {"id": 10}, {"id": 0}]},{"id": 729, "degree": 4.625,  "hamiltonian": null, "iterations": 27258, "nanoseconds": 10000002131
+, "algorithm": "rubin", "path": null},{"id": 730, "degree": 4.625,  "hamiltonian": false, "iterations": 499, "nanoseconds": 208602083
+, "algorithm": "rubin", "path": null},{"id": 731, "degree": 4.625,  "hamiltonian": true, "iterations": 74, "nanoseconds": 29405996
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 1}, {"id": 9}, {"id": 3}, {"id": 12}, {"id": 7}, {"id": 6}, {"id": 11}, {"id": 8}, {"id": 2}, {"id": 13}, {"id": 14}, {"id": 4}, {"id": 10}, {"id": 5}, {"id": 0}]},{"id": 732, "degree": 4.625,  "hamiltonian": true, "iterations": 296, "nanoseconds": 126310083
+, "algorithm": "rubin", "path": [{"id": 4}, {"id": 12}, {"id": 7}, {"id": 2}, {"id": 15}, {"id": 3}, {"id": 11}, {"id": 9}, {"id": 5}, {"id": 13}, {"id": 8}, {"id": 6}, {"id": 14}, {"id": 1}, {"id": 10}, {"id": 0}]},{"id": 733, "degree": 4.625,  "hamiltonian": true, "iterations": 76, "nanoseconds": 37450532
+, "algorithm": "rubin", "path": [{"id": 7}, {"id": 8}, {"id": 11}, {"id": 12}, {"id": 3}, {"id": 4}, {"id": 15}, {"id": 9}, {"id": 2}, {"id": 14}, {"id": 13}, {"id": 10}, {"id": 6}, {"id": 1}, {"id": 5}, {"id": 0}]},{"id": 734, "degree": 4.625,  "hamiltonian": false, "iterations": 3, "nanoseconds": 4550135
+, "algorithm": "rubin", "path": null},{"id": 735, "degree": 4.625,  "hamiltonian": true, "iterations": 134, "nanoseconds": 60713787
+, "algorithm": "rubin", "path": [{"id": 8}, {"id": 4}, {"id": 13}, {"id": 7}, {"id": 14}, {"id": 9}, {"id": 3}, {"id": 12}, {"id": 11}, {"id": 6}, {"id": 2}, {"id": 15}, {"id": 10}, {"id": 1}, {"id": 5}, {"id": 0}]},{"id": 736, "degree": 4.625,  "hamiltonian": false, "iterations": 6697, "nanoseconds": 2958021139
+, "algorithm": "rubin", "path": null},{"id": 737, "degree": 4.625,  "hamiltonian": false, "iterations": 9145, "nanoseconds": 4559237952
+, "algorithm": "rubin", "path": null},{"id": 738, "degree": 4.625,  "hamiltonian": true, "iterations": 342, "nanoseconds": 151110393
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 2}, {"id": 3}, {"id": 10}, {"id": 7}, {"id": 12}, {"id": 9}, {"id": 14}, {"id": 8}, {"id": 4}, {"id": 11}, {"id": 13}, {"id": 5}, {"id": 6}, {"id": 1}, {"id": 0}]},{"id": 739, "degree": 4.625,  "hamiltonian": true, "iterations": 794, "nanoseconds": 354011657
+, "algorithm": "rubin", "path": [{"id": 14}, {"id": 13}, {"id": 10}, {"id": 15}, {"id": 2}, {"id": 8}, {"id": 4}, {"id": 11}, {"id": 7}, {"id": 9}, {"id": 3}, {"id": 12}, {"id": 1}, {"id": 6}, {"id": 5}, {"id": 0}]},{"id": 740, "degree": 4.75,  "hamiltonian": true, "iterations": 20, "nanoseconds": 9322945
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 5}, {"id": 2}, {"id": 13}, {"id": 11}, {"id": 7}, {"id": 12}, {"id": 6}, {"id": 8}, {"id": 4}, {"id": 9}, {"id": 1}, {"id": 10}, {"id": 3}, {"id": 14}, {"id": 0}]},{"id": 741, "degree": 4.75,  "hamiltonian": true, "iterations": 242, "nanoseconds": 146979293
+, "algorithm": "rubin", "path": [{"id": 12}, {"id": 3}, {"id": 11}, {"id": 2}, {"id": 8}, {"id": 14}, {"id": 4}, {"id": 10}, {"id": 9}, {"id": 6}, {"id": 13}, {"id": 1}, {"id": 15}, {"id": 7}, {"id": 5}, {"id": 0}]},{"id": 742, "degree": 4.75,  "hamiltonian": false, "iterations": 1, "nanoseconds": 817936
+, "algorithm": "rubin", "path": null},{"id": 743, "degree": 4.75,  "hamiltonian": true, "iterations": 196, "nanoseconds": 66821781
+, "algorithm": "rubin", "path": [{"id": 14}, {"id": 6}, {"id": 8}, {"id": 11}, {"id": 7}, {"id": 2}, {"id": 4}, {"id": 10}, {"id": 3}, {"id": 9}, {"id": 12}, {"id": 15}, {"id": 1}, {"id": 13}, {"id": 5}, {"id": 0}]},{"id": 744, "degree": 4.75,  "hamiltonian": true, "iterations": 324, "nanoseconds": 165665690
+, "algorithm": "rubin", "path": [{"id": 12}, {"id": 9}, {"id": 15}, {"id": 3}, {"id": 14}, {"id": 4}, {"id": 7}, {"id": 2}, {"id": 8}, {"id": 11}, {"id": 1}, {"id": 10}, {"id": 6}, {"id": 13}, {"id": 5}, {"id": 0}]},{"id": 745, "degree": 4.75,  "hamiltonian": null, "iterations": 24072, "nanoseconds": 10000296687
+, "algorithm": "rubin", "path": null},{"id": 746, "degree": 4.75,  "hamiltonian": true, "iterations": 4370, "nanoseconds": 1686559193
+, "algorithm": "rubin", "path": [{"id": 4}, {"id": 9}, {"id": 13}, {"id": 14}, {"id": 2}, {"id": 11}, {"id": 7}, {"id": 6}, {"id": 8}, {"id": 10}, {"id": 3}, {"id": 12}, {"id": 1}, {"id": 15}, {"id": 5}, {"id": 0}]},{"id": 747, "degree": 4.75,  "hamiltonian": false, "iterations": 11119, "nanoseconds": 5592677409
+, "algorithm": "rubin", "path": null},{"id": 748, "degree": 4.75,  "hamiltonian": true, "iterations": 96, "nanoseconds": 56144750
+, "algorithm": "rubin", "path": [{"id": 12}, {"id": 4}, {"id": 7}, {"id": 9}, {"id": 3}, {"id": 10}, {"id": 13}, {"id": 8}, {"id": 2}, {"id": 11}, {"id": 15}, {"id": 6}, {"id": 1}, {"id": 14}, {"id": 5}, {"id": 0}]},{"id": 749, "degree": 4.75,  "hamiltonian": true, "iterations": 36, "nanoseconds": 16838098
+, "algorithm": "rubin", "path": [{"id": 7}, {"id": 11}, {"id": 10}, {"id": 15}, {"id": 8}, {"id": 13}, {"id": 4}, {"id": 6}, {"id": 12}, {"id": 1}, {"id": 3}, {"id": 9}, {"id": 2}, {"id": 14}, {"id": 5}, {"id": 0}]},{"id": 750, "degree": 4.75,  "hamiltonian": true, "iterations": 50, "nanoseconds": 24844861
+, "algorithm": "rubin", "path": [{"id": 13}, {"id": 9}, {"id": 15}, {"id": 7}, {"id": 8}, {"id": 14}, {"id": 4}, {"id": 2}, {"id": 11}, {"id": 3}, {"id": 12}, {"id": 1}, {"id": 10}, {"id": 6}, {"id": 5}, {"id": 0}]},{"id": 751, "degree": 4.75,  "hamiltonian": true, "iterations": 80, "nanoseconds": 35164133
+, "algorithm": "rubin", "path": [{"id": 7}, {"id": 12}, {"id": 8}, {"id": 15}, {"id": 3}, {"id": 4}, {"id": 6}, {"id": 13}, {"id": 9}, {"id": 14}, {"id": 11}, {"id": 2}, {"id": 10}, {"id": 5}, {"id": 1}, {"id": 0}]},{"id": 752, "degree": 4.75,  "hamiltonian": true, "iterations": 1378, "nanoseconds": 557651374
+, "algorithm": "rubin", "path": [{"id": 9}, {"id": 7}, {"id": 11}, {"id": 3}, {"id": 5}, {"id": 13}, {"id": 2}, {"id": 10}, {"id": 1}, {"id": 15}, {"id": 4}, {"id": 12}, {"id": 8}, {"id": 14}, {"id": 6}, {"id": 0}]},{"id": 753, "degree": 4.75,  "hamiltonian": true, "iterations": 74, "nanoseconds": 34813648
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 10}, {"id": 7}, {"id": 4}, {"id": 13}, {"id": 3}, {"id": 14}, {"id": 11}, {"id": 9}, {"id": 8}, {"id": 12}, {"id": 2}, {"id": 1}, {"id": 6}, {"id": 5}, {"id": 0}]},{"id": 754, "degree": 4.75,  "hamiltonian": false, "iterations": 1811, "nanoseconds": 965517617
+, "algorithm": "rubin", "path": null},{"id": 755, "degree": 4.75,  "hamiltonian": true, "iterations": 170, "nanoseconds": 78972867
+, "algorithm": "rubin", "path": [{"id": 11}, {"id": 8}, {"id": 15}, {"id": 4}, {"id": 3}, {"id": 6}, {"id": 13}, {"id": 14}, {"id": 12}, {"id": 7}, {"id": 5}, {"id": 2}, {"id": 9}, {"id": 10}, {"id": 1}, {"id": 0}]},{"id": 756, "degree": 4.75,  "hamiltonian": true, "iterations": 16, "nanoseconds": 5959346
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 11}, {"id": 9}, {"id": 10}, {"id": 3}, {"id": 4}, {"id": 8}, {"id": 13}, {"id": 14}, {"id": 2}, {"id": 7}, {"id": 12}, {"id": 6}, {"id": 1}, {"id": 5}, {"id": 0}]},{"id": 757, "degree": 4.75,  "hamiltonian": null, "iterations": 27701, "nanoseconds": 10000315391
+, "algorithm": "rubin", "path": null},{"id": 758, "degree": 4.75,  "hamiltonian": true, "iterations": 276, "nanoseconds": 115997798
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 11}, {"id": 13}, {"id": 4}, {"id": 3}, {"id": 12}, {"id": 7}, {"id": 9}, {"id": 14}, {"id": 2}, {"id": 8}, {"id": 1}, {"id": 5}, {"id": 6}, {"id": 10}, {"id": 0}]},{"id": 759, "degree": 4.75,  "hamiltonian": true, "iterations": 50, "nanoseconds": 18989825
+, "algorithm": "rubin", "path": [{"id": 11}, {"id": 13}, {"id": 3}, {"id": 7}, {"id": 14}, {"id": 8}, {"id": 6}, {"id": 9}, {"id": 4}, {"id": 12}, {"id": 15}, {"id": 10}, {"id": 1}, {"id": 2}, {"id": 5}, {"id": 0}]},{"id": 760, "degree": 4.875,  "hamiltonian": true, "iterations": 34, "nanoseconds": 12808417
+, "algorithm": "rubin", "path": [{"id": 8}, {"id": 9}, {"id": 3}, {"id": 4}, {"id": 15}, {"id": 12}, {"id": 11}, {"id": 2}, {"id": 10}, {"id": 7}, {"id": 14}, {"id": 13}, {"id": 6}, {"id": 1}, {"id": 5}, {"id": 0}]},{"id": 761, "degree": 4.875,  "hamiltonian": null, "iterations": 24599, "nanoseconds": 10000641709
+, "algorithm": "rubin", "path": null},{"id": 762, "degree": 4.875,  "hamiltonian": true, "iterations": 368, "nanoseconds": 158654989
+, "algorithm": "rubin", "path": [{"id": 14}, {"id": 4}, {"id": 12}, {"id": 9}, {"id": 13}, {"id": 8}, {"id": 7}, {"id": 3}, {"id": 2}, {"id": 15}, {"id": 1}, {"id": 11}, {"id": 10}, {"id": 6}, {"id": 5}, {"id": 0}]},{"id": 763, "degree": 4.875,  "hamiltonian": true, "iterations": 1470, "nanoseconds": 797012595
+, "algorithm": "rubin", "path": [{"id": 15}, {"id": 14}, {"id": 1}, {"id": 11}, {"id": 7}, {"id": 6}, {"id": 10}, {"id": 4}, {"id": 8}, {"id": 9}, {"id": 3}, {"id": 12}, {"id": 2}, {"id": 13}, {"id": 5}, {"id": 0}]},{"id": 764, "degree": 4.875,  "hamiltonian": true, "iterations": 30, "nanoseconds": 12199450
+, "algorithm": "rubin", "path": [{"id": 9}, {"id": 7}, {"id": 11}, {"id": 4}, {"id": 3}, {"id": 6}, {"id": 12}, {"id": 8}, {"id": 13}, {"id": 14}, {"id": 15}, {"id": 1}, {"id": 2}, {"id": 10}, {"id": 5}, {"id": 0}]},{"id": 765, "degree": 4.875,  "hamiltonian": true, "iterations": 450, "nanoseconds": 220594575
+, "algorithm": "rubin", "path": [{"id": 13}, {"id": 5}, {"id": 14}, {"id": 11}, {"id": 7}, {"id": 12}, {"id": 4}, {"id": 8}, {"id": 6}, {"id": 2}, {"id": 15}, {"id": 3}, {"id": 9}, {"id": 1}, {"id": 10}, {"id": 0}]},{"id": 766, "degree": 4.875,  "hamiltonian": true, "iterations": 40, "nanoseconds": 20482990
+, "algorithm": "rubin", "path": [{"i
