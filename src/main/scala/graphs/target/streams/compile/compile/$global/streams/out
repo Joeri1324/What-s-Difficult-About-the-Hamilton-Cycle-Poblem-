@@ -1,0 +1,94 @@
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:3:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:4:8: not found: object DefaultJsonProtocol[0m
+[0m[[0m[31merror[0m] [0m[0mimport DefaultJsonProtocol._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:36:31: not found: type DefaultJsonProtocol[0m
+[0m[[0m[31merror[0m] [0m[0mobject MyJsonProtocol extends DefaultJsonProtocol {[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:37:33: not found: value jsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val endpointFormat = jsonFormat(Endpoint, "id")[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:38:30: not found: value jsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val edgesFormat = jsonFormat(Edges, "endpoints")[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:39:31: not found: value jsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val vertexFormat = jsonFormat(Vertex, "id")[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:40:30: not found: value jsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val graphFormat = jsonFormat(Graph, "identifier", "vertices", "edges",[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:42:47: not found: type RootJsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit object graphListJsonFormat extends RootJsonFormat[GraphList] {[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:43:21: not found: type JsValue[0m
+[0m[[0m[31merror[0m] [0m[0m    def read(value: JsValue) = GraphList(value.convertTo[List[Graph]])[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:44:35: not found: value JsArray[0m
+[0m[[0m[31merror[0m] [0m[0m    def write(value: GraphList) = JsArray([0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:45:33: not found: value JsObject[0m
+[0m[[0m[31merror[0m] [0m[0m      value.graphs.map(graph => JsObject([0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:46:25: not found: value JsNumber[0m
+[0m[[0m[31merror[0m] [0m[0m        "identifier" -> JsNumber(graph.identifier),[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:47:25: not found: value JsArray[0m
+[0m[[0m[31merror[0m] [0m[0m        "vertices"   -> JsArray([0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:48:35: not found: value JsObject[0m
+[0m[[0m[31merror[0m] [0m[0m          graph.vertices.map(v => JsObject("id" -> JsNumber(v.id)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:48:52: not found: value JsNumber[0m
+[0m[[0m[31merror[0m] [0m[0m          graph.vertices.map(v => JsObject("id" -> JsNumber(v.id)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:50:20: not found: value JsArray[0m
+[0m[[0m[31merror[0m] [0m[0m        "edges" -> JsArray ([0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:51:32: not found: value JsObject[0m
+[0m[[0m[31merror[0m] [0m[0m          graph.edges.map(e => JsObject("endpoints" -> JsArray([0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:51:56: not found: value JsArray[0m
+[0m[[0m[31merror[0m] [0m[0m          graph.edges.map(e => JsObject("endpoints" -> JsArray([0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:52:13: not found: value JsObject[0m
+[0m[[0m[31merror[0m] [0m[0m            JsObject("id" -> JsNumber(e.endpoints(0).id)),[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:52:30: not found: value JsNumber[0m
+[0m[[0m[31merror[0m] [0m[0m            JsObject("id" -> JsNumber(e.endpoints(0).id)),[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:53:13: not found: value JsObject[0m
+[0m[[0m[31merror[0m] [0m[0m            JsObject("id" -> JsNumber(e.endpoints(1).id)),[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:53:30: not found: value JsNumber[0m
+[0m[[0m[31merror[0m] [0m[0m            JsObject("id" -> JsNumber(e.endpoints(1).id)),[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:57:30: not found: value JsObject[0m
+[0m[[0m[31merror[0m] [0m[0m        "connectivityMap" -> JsObject(graph.connectivityMap.map(c => {[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:58:19: not found: value JsNumber[0m
+[0m[[0m[31merror[0m] [0m[0m          c._1 -> JsNumber(c._2)[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:66:8: not found: object DefaultJsonProtocol[0m
+[0m[[0m[31merror[0m] [0m[0mimport DefaultJsonProtocol._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:73:8: value parseJson is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value parseJson'?[0m
+[0m[[0m[31merror[0m] [0m[0m      .parseJson[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:81:10: value parseJson is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value parseJson'?[0m
+[0m[[0m[31merror[0m] [0m[0m        .parseJson[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Graph.scala:160:8: value toJson is not a member of graphs.Graph[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value toJson'?[0m
+[0m[[0m[31merror[0m] [0m[0m      .toJson[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Main.scala:6:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joeri/master/thesis/phasetransition-in-hamilton-cycles/src/main/scala/graphs/Main.scala:28:44: value foreach is not a member of Array[Nothing][0m
+[0m[[0m[31merror[0m] [0m[0m      GraphReader.graphsFromFolder(folder).foreach(graph => {[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m30 errors found[0m

@@ -8,6 +8,7 @@ lazy val root = (project in file(".")).
       version      := "0.1.0-SNAPSHOT"
     )),
     name := "Main",
+    libraryDependencies += "org.scala-lang.modules" %% "scala-async" % "0.9.7",
     libraryDependencies += scalaTest % Test,
     libraryDependencies += "io.spray" %%  "spray-json" % "1.3.5"
   )

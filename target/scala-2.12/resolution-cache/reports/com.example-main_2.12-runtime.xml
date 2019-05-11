@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.example"
+		module="main_2.12"
+		revision="0.1.0-SNAPSHOT"
+		conf="runtime"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20190316184639"/>
+	<dependencies>
+		<module organisation="io.spray" name="spray-json_2.12">
+			<revision name="1.3.5" status="release" pubdate="20181108141646" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spray/spray-json" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3078" time="0" location="/home/joeri/.ivy2/cache/io.spray/spray-json_2.12/ivy-1.3.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-json_2.12/1.3.5/spray-json_2.12-1.3.5.pom"/>
+				<caller organisation="com.example" name="main_2.12" conf="compile, runtime" rev="1.3.5" rev-constraint-default="1.3.5" rev-constraint-dynamic="1.3.5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="spray-json_2.12" type="jar" ext="jar" status="no" details="" size="294174" time="0" location="/home/joeri/.ivy2/cache/io.spray/spray-json_2.12/jars/spray-json_2.12-1.3.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-json_2.12/1.3.5/spray-json_2.12-1.3.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-async_2.12">
+			<revision name="0.9.7" status="release" pubdate="20170808064744" resolver="public" artresolver="public" homepage="http://github.com/scala/async" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="successful" details="" size="2785" time="60" location="/home/joeri/.ivy2/cache/org.scala-lang.modules/scala-async_2.12/ivy-0.9.7.xml" searched="true" original-local-location="/home/joeri/.ivy2/cache/org.scala-lang.modules/scala-async_2.12/ivy-0.9.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-async_2.12/0.9.7/scala-async_2.12-0.9.7.pom"/>
+				<caller organisation="com.example" name="main_2.12" conf="compile, runtime" rev="0.9.7" rev-constraint-default="0.9.7" rev-constraint-dynamic="0.9.7" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-async_2.12" type="jar" ext="jar" status="successful" details="" size="364002" time="216" location="/home/joeri/.ivy2/cache/org.scala-lang.modules/scala-async_2.12/jars/scala-async_2.12-0.9.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-async_2.12/0.9.7/scala-async_2.12-0.9.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.5" status="release" pubdate="20180316144746" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.5/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/home/joeri/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5.pom"/>
+				<caller organisation="com.example" name="main_2.12" conf="compile, runtime" rev="2.12.5" rev-constraint-default="2.12.5" rev-constraint-dynamic="2.12.5" callerrev="0.1.0-SNAPSHOT"/>
+				<caller organisation="io.spray" name="spray-json_2.12" conf="default, compile, runtime, master" rev="2.12.5" rev-constraint-default="2.12.5" rev-constraint-dynamic="2.12.5" callerrev="1.3.5"/>
+				<caller organisation="org.scala-lang.modules" name="scala-async_2.12" conf="default, compile, runtime, master" rev="2.12.5" rev-constraint-default="2.12.5" rev-constraint-dynamic="2.12.5" callerrev="0.9.7"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5263467" time="0" location="/home/joeri/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.5/scala-library-2.12.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

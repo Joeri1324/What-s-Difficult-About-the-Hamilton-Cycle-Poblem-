@@ -1,0 +1,7 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mVandegriendSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPrune[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should correctly remove triangle with degree 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFuncPrune[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should correctly remove triangle with degree 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFuncPrune[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should correctly ends of paths with degree 2[0m[0m

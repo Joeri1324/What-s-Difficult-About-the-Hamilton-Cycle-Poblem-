@@ -1,0 +1,7 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mDepthFirstSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDepthFirst[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should correctly solve full connected graph *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  None did not equal Some(true) (DepthFirstSpec.scala:13)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDepthFirst[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should correctly solve not connected graph *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  None did not equal Some(false) (DepthFirstSpec.scala:23)[0m[0m

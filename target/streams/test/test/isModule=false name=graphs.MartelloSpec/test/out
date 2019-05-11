@@ -1,0 +1,7 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mMartelloSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mImplied edges[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should contain correct edges[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPrunePath[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return ends of one degree path[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPruneEnds[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return ends of implied arcs[0m[0m

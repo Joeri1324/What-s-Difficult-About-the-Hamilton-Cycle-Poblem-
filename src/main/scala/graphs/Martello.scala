@@ -1,186 +1,181 @@
-package graphs
+// package graphs
 
-import scala.collection._
-import System.nanoTime
+// import System.nanoTime
+// import scala.collection._
 
-object Martello {
+// object Martello extends Solver {
 
- /** Transforms graph into a Map for faster lookup
-   *
-   * Returns a Map that for a vertex: Int gets a list of all neighbour
-   * vertices.
-   */
-  def createEdgeMap(graph: Array[Array[Int]]): Map[Int, Set[Int]] = {
-    for {
-      i <- graph.indices
-    } yield (i -> graph.indices.filter(j => graph(i)(j) == 1).toSet)
-  } toMap
+//   def name = "martello"
 
-  /** Returns the set of edges that must be in any Hamiltonian-Cycle
-   *
-   */
-  def getImplied(in: Map[Int, Set[Int]], out: Map[Int, Set[Int]]): Set[(Int, Int)] = {
-    val inOne = for (
-      (v1, e) <- in.toVector;
-      v2      <- e
-      if e.size == 1
-    ) yield (v2, v1)
-    val outOne = for (
-      (v1, e) <- out.toVector;
-      v2      <- e
-      if e.size == 1
-    ) yield (v1, v2)
+//   def funcPruneDegreeTwoNeighbours(edges: Map[Int, Set[Int]]): Map[Int, Set[Int]] = {
+//     val doubleEdges = { for ( i <- edges.keys; if (edges(i).size == 2)) yield (i) }.toSet
 
-    (inOne ++ outOne).toSet
-  }
+//     edges.mapValues(n => {
+//       val doubles = n.filter(a => doubleEdges.contains(a))
+//       if (doubles.size > 1) doubles.take(2)
+//       else                  n
+//     })
+//   }
 
-  def func(oneEdges: Map[Int, Set[Int]], path: List[Int] = List()): 
-    (Map[Int, Set[Int]], List[Int]) = {
-    if      (oneEdges.isEmpty)              (oneEdges, path)
-    else if (path.isEmpty)                  {
-      val start = oneEdges.keys.head
-      func(oneEdges, List(start))
-    }
-    else if (!oneEdges.contains(path.head))           (oneEdges, path)
-    else if (path.contains(oneEdges(path.head).head)) (oneEdges, path)
-    else {
-      val newNode = oneEdges(path.head).head
-      val newMap  = 
-        if (oneEdges(path.head).size == 1) oneEdges - path.head
-        else oneEdges.updated(path.head, oneEdges(path.head) - newNode) 
-      func(newMap, newNode :: path)
-    }
-  }
+//   def pruneDegreeTwoNeighbours(edges: Map[Int, mutable.Set[Int]]): 
+//     mutable.ListBuffer[(Int, Int)] = {
+//     val doubleEdges    = for { i <- edges.keys; if (edges(i).size == 2) } yield (i)
+//     val nonDoubleEdges = { for ( i <- edges.keys; if (edges(i).size != 2)) yield (i) } toSet
 
-  def recurse(oneEdges: Map[Int, Set[Int]], size: Int, toDelete: List[(Int, Int)] = List()): List[(Int, Int)] = {
-
-    if (oneEdges.isEmpty) toDelete
-    else {
-      val (newOneEdges, path) = func(oneEdges)
-      if (path.size > 2 && path.size < (size - 1)) { recurse(newOneEdges, size, (path.head, path.last) :: toDelete) }
-      else               recurse(newOneEdges, size, toDelete)
-    }
-  }
-
-  def prunePath(in: Map[Int, Set[Int]], out: Map[Int, Set[Int]], implied: Set[(Int, Int)],
-    toDelete: List[(Int, Int)] = List()): List[(Int, Int)] = {
-
-    val oneEdges  = implied.groupBy(_._1).mapValues(v => v.map(_._2).toSet)
-    recurse(oneEdges, in.size).filter({ case (v1, v2) => out(v1).contains(v2) })
-  }
-
-  /** Finds arcs that can be deleted based on the opposites of implied arcs.
-    *
-    * 
-    */
-  def pruneEnds(implied: Set[(Int, Int)], incoming: Map[Int, Set[Int]], 
-    outgoing: Map[Int, Set[Int]], start: Int) = {
-      val emanating = for (
-        (v1, v2) <- implied; 
-        v3 <- incoming(v2); 
-        if !implied.contains(v3, v2) && v2 != start) yield (v3, v2)
-      val termanating = for (
-        (v1, v2) <- implied;
-        v3 <- outgoing(v1);
-        if !implied.contains(v1, v3) && v3 != start) yield (v1, v3)
-      emanating ++ termanating
+//     val vertexX = { for (
+//       i <- doubleEdges;
+//       j <- edges(i)
+//       if (nonDoubleEdges.contains(j))
+//     ) yield (j, i) }.groupBy(_._1).filter(_._2.size == 2)
       
-  }
+//     val toDelete = vertexX.map(t => (t._1, edges(t._1).filter(y => nonDoubleEdges.contains(y))))
+//     val deleted = mutable.ListBuffer[(Int, Int)]()
+//     for ((i, e) <- toDelete; j <- e) {
+//       edges(i) -= j
+//       edges(j) -= i
+//       deleted += ((i, j))
+//     }
 
-  def prune(in: Map[Int, Set[Int]], out: Map[Int, Set[Int]], 
-    start: Int, deleted: Set[(Int, Int)] = Set()): Set[(Int, Int)]  = {
+//     deleted
+//   }
 
-    val implied     = getImplied(in, out)
-    val pathDeleted = prunePath(in, out, implied)
-    val endDeleted  = pruneEnds(implied, in, out, start)
-    val delete      = pathDeleted ++ endDeleted
-    val nothingChanged = delete.size == 0 
+//   def pruneTriangleWithTwoDegreePath(edges: Map[Int, mutable.Set[Int]]): 
+//     mutable.ListBuffer[(Int, Int)] = {
+//     var changed = false
+//     val doubleEdges = for ( i <- edges.keys; if (edges(i).size == 2)) yield (i)
+//     var doubleVertices = doubleEdges toSet
+//     var deleted = mutable.ListBuffer[(Int, Int)]()
+
+//     while (!doubleVertices.isEmpty) {
+//       var edge1 = edges(doubleVertices.head).head
+//       var edge2 = edges(doubleVertices.head).tail.head
+//       var path  = mutable.Set(doubleVertices.head)
+//       doubleVertices -= doubleVertices.head
+
+//       while (doubleVertices.contains(edge1) || doubleVertices.contains(edge2)) {
+//         if (doubleVertices.contains(edge1)) {
+//           path += edge1 // is this constant ???
+//           val temp = edges(edge1).filterNot(e => path.contains(e))
+//           if (temp.size > 0) edge1 = temp.head else return deleted
+//         }
+//         if (doubleVertices.contains(edge2)) {
+//           path += edge2 // same ??
+//           val temp = edges(edge2).filterNot(e => path.contains(e))
+//           if (temp.size > 0) edge2 = temp.head else return deleted
+//         }
+//       }
+//       path.foreach(p => doubleVertices -= p)
+//       if (edges(edge1).contains(edge2)) changed = true;
+//       if (edges(edge1).contains(edge2)) deleted += ((edge1, edge2))
+//       edges(edge1) -= edge2
+//       edges(edge2) -= edge1
+//       doubleVertices -= edge1
+//       doubleVertices -= edge2
+//     }
+
+//     deleted
+//   }
+
+//   def prune(edges: Map[Int, mutable.Set[Int]]): mutable.ListBuffer[(Int, Int)] = {
+//     var changed = true
+//     var deleted = mutable.ListBuffer[(Int, Int)]()
+//     var newDeleted = mutable.ListBuffer[(Int, Int)]()
   
-    if (nothingChanged) deleted
-    else                {
-      val (newIn, newOut) = handleDelete(deleted, in, out)
-      prune(newIn, newOut, start, deleted ++ delete)
-    }
-  }
+//     while (changed) {
+//       newDeleted = pruneTriangleWithTwoDegreePath(edges)
+//       if (newDeleted.isEmpty) changed = false
+//       deleted ++= newDeleted
+//     }
+//     deleted
+//   }
 
-  def handleDelete(toDelete: Set[(Int, Int)], incoming: Map[Int, Set[Int]],
-    outgoing: Map[Int, Set[Int]]): (Map[Int, Set[Int]], Map[Int, Set[Int]]) = {
-    if (toDelete.isEmpty) (incoming, outgoing)
-    else {
-      val delete = toDelete.head
-      val newIncoming = incoming
-        .updated(delete._2, incoming(delete._2) - delete._1)
-      val newOutgoing = outgoing
-        .updated(delete._1, outgoing(delete._1) - delete._2)
+//   def initEdges(graphAsArray: Array[Array[Int]]): Map[Int, mutable.Set[Int]] = {
+//     val edges = { for (i <- graphAsArray.indices) yield (i, mutable.Set[Int]()) } toMap
 
-      handleDelete(toDelete.tail, newIncoming, newOutgoing)
-    }
-  }
+//     for {
+//       i <- graphAsArray.indices
+//       j <- graphAsArray.indices
+//       if graphAsArray(i)(j) == 1
+//     } { 
+//      edges(i) += j
+//      edges(j) += i 
+//     }
+//     edges
+//   }
 
-  def nextNode(sol: List[Int], checked: Set[Int], in: Map[Int, Set[Int]],
-      out: Map[Int, Set[Int]]): Option[Int] = {
+//   def check(edges: Map[Int, mutable.Set[Int]]): Boolean = {
+//     edges.values.forall(_.size >= 2)
+//   }
 
-    val degreeMap = in.keys.map(v => (v, in(v).size + out(v).size)).toMap
-    val a = (if (!sol.isEmpty) out(sol.head) else in.keys)
-      .toList
-      .filter(e => !checked.contains(e) && !sol.contains(e))
-      .sortBy(x => degreeMap(x))
+//   def chooseNextNode(edges: Map[Int, mutable.Set[Int]], 
+//     stack: mutable.Stack[(mutable.ListMap[Int, Boolean], List[Int], mutable.ListBuffer[(Int, Int)])]): Option[Int] = {
 
-    if (a.isEmpty) None
-    else           Some(a.head)
-  }
+//     val degreeMap = edges.mapValues(_.size)
+//     val sortedOnDegree = if (!stack.isEmpty) { edges(stack.head._2.head)
+//       .filter(e => !stack.head._1.contains(e) && !stack.head._2.contains(e))
+//       .toList
+//       .sortBy(x => degreeMap(x))
+//     } else degreeMap.toList.sortBy(_._2).map(_._1)
 
-  def solve(graph: Array[Array[Int]], maxTime: Long) = {
-    // step 0
-    val incomingEdges = createEdgeMap(graph)
-    val outgoingEdges = createEdgeMap(graph)
-    var iterations = 0
-    val startTime  = nanoTime
+//     if (sortedOnDegree.isEmpty) None
+//     else                        Some(sortedOnDegree.head)
+//   }
 
-    def isHamiltonian(sol: List[Int]) = 
-      (sol.size == graph.size && graph(sol.head)(sol.last) == 1)
+//   def solve(graphAsArray: Array[Array[Int]], maxTime: Long, cutoff: (Int, Long) => Boolean): 
+//     (Option[Boolean], Int, Long, Option[List[Int]]) = {
+//     // type Node = (ListMap[Int, Boolean], List[Int], ListBuffer[(Int, Int)])
 
-    def check(in: Map[Int, Set[Int]], out: Map[Int, Set[Int]]) =
-      in.exists(_._2.size == 0) || out.exists(_._2.size == 0)
+//     val edges   = initEdges(graphAsArray)
+//     var deleted = prune(edges)
+    
+//     val stack: mutable.Stack[(mutable.ListMap[Int, Boolean], List[Int], mutable.ListBuffer[(Int, Int)])] = mutable.Stack()
+//     val start = chooseNextNode(edges, stack).get
+//     stack.push((new mutable.ListMap[Int, Boolean], List(start), deleted))
+//     stack.head._1
+//     var iterations = 0
+//     val startTime  = nanoTime
 
-    def getChildren(i: Int, sol: List[Int], in: Map[Int, Set[Int]], out: Map[Int, Set[Int]]) = 
-      if (sol.size > 1) (
-        ({ for (v <- in(i); if v != sol.head) yield (v, i) } ++ 
-        { for (v <- out(sol.head); if v != i) yield (sol.head, v)}).toSet
-      )
-      else Set()
+//     while (!stack.isEmpty && !(stack.size == graphAsArray.size)) {
+//       if (cutoff(iterations, startTime)) return (None, iterations, nanoTime - startTime, None)
+  
+//       iterations = iterations + 1
+//       deleted    = prune(edges)
+//       val childNode = chooseNextNode(edges, stack)
 
-    def recurseSolve(sol: List[Int], checked: Set[Int] = Set(),
-      deleted: Set[(Int, Int)] = Set()): Option[Boolean] = {
-      iterations = iterations + 1  
-      val (currentIn, currentOut) = handleDelete(deleted, incomingEdges, outgoingEdges)
-      val moreDelete              = prune(currentIn, currentOut, sol.last).toSet
-      val (in, out)               = handleDelete(moreDelete, currentIn, currentOut)    
+//       childNode match {
+//         case None    => { 
+//           stack.head._3.foreach({ case (v1, v2) => edges(v1) += v2; edges(v2) += v1 })
+//           deleted.foreach({ case (v1, v2) => edges(v1) += v2; edges(v2) += v1 })
+//           stack pop
+//         } 
+//         case _ if !check(edges) => { 
+//           stack.head._3.foreach({ case (v1, v2) => edges(v1) += v2; edges(v2) += v1 })
+//           deleted.foreach({ case (v1, v2) => edges(v1) += v2; edges(v2) += v1 })
+//           stack pop
+//         }
+//         case Some(current) => {
+//           if (stack.head._2.size > 1) {
+//             val previous       = stack.head._2.head
+//             val secondPrevious = stack.head._2.tail.head
+//             edges(previous).filterNot(j => j == current || j == secondPrevious).foreach(j => {
+//               edges(previous) -= j
+//               edges(j)        -= previous
+//               deleted         += ((previous, j))
+//             })
+//           }
+          
+//           stack.head._1.put(current, true)
+//           stack.push((new mutable.ListMap[Int, Boolean], current :: stack.head._2, deleted)) }
+//       }
 
-      if      (nanoTime - startTime > maxTime)      None
-      else if (isHamiltonian(sol))      { println(sol); Some(true) }
-      else if (!out.contains(sol.head)) Some(false)
-      // have to double check
-      else if (sol.size == graph.size)  recurseSolve(sol.tail, checked + sol.head, deleted)
-      else {
-        val child = nextNode(sol, checked, in, out)
-        child match {
-          case None                      => Some(false)
-          case Some(i) if check(in, out) => Some(false)
-          case Some(i)                   => {
-            val deleteChild = getChildren(i, sol, in, out)
+//       if (stack.size == graphAsArray.size && graphAsArray(stack.head._2.head)(start) == 0) {
+//         stack.head._3.foreach({ case (v1, v2) => edges(v1) += v2; edges(v2) += v1 })
+//         stack pop
+//       }
+//     }
 
-            recurseSolve(i :: sol, deleted = deleted ++ deleteChild ++ moreDelete ) match {
-              case None        => None
-              case Some(true)  => Some(true)
-              case Some(false) => recurseSolve(sol, checked + i, deleted)
-            }
-          }
-        }
-      }
-    }
+//     if (stack.isEmpty) (Some(false), iterations, nanoTime - startTime, None)
+//     else               (Some(true),  iterations, nanoTime - startTime, Some(stack.head._2))
+//   }
+// }
 
-    val start = List(nextNode(Nil, Set(), incomingEdges, outgoingEdges).get)
-    (recurseSolve(start), iterations, nanoTime - startTime)
-  }
-}
