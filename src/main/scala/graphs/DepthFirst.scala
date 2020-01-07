@@ -5,8 +5,8 @@ import scala.collection._
 
 trait DepthFirst extends Solver {
 
-  /* String description to choose the branching heurstic. */
-  def heuristic: String
+  /* The branching heurstic. */
+  def heuristic: (List[Int], Map[Int, Set[Int]], Set[Int]) => Option[Int]
 
   /* List of pruning functions that are applied during the pruning phase.
    * Pruning functions should take a graph represented as a map as input
@@ -209,31 +209,6 @@ trait DepthFirst extends Solver {
     points.isEmpty
   }
 
-
-  /* next vertex gives an option on an integer for the next vertex.
-   * The next vertex is selected bases on the first element in the solution
-   * a vertex is selected that is not in the solution and is not tried yet.
-   * if a heuristic is used the highest or lowest is vertex is selected. */
-  def nextVertex(
-    sol:     List[Int], 
-    edges:   Map[Int, Set[Int]], 
-    checked: Set[Int]
-  ): Option[Int] = {
-
-    val degreeMap = edges.mapValues(_.size)
-    val options   = if (sol.isEmpty) edges.keys.toList else edges(sol.head)
-      .filter(e => !sol.contains(e) && !checked.contains(e))
-      .toList
-    val sorted    = sortWith((x, y) => {
-      if      (heuristic == "low")  degreeMap(x) < degreeMap(y)
-      else if (heuristic == "high") degreeMap(x) > degreeMap(y)
-      else                          true
-    })
-
-    if (sorted.isEmpty) None
-    else                Some(sorted.head)
-  }
-
  /** Transforms graph into a Map for faster lookup
    *
    * Returns a Map that for a vertex: Int gets a list of all neighbour
@@ -262,16 +237,15 @@ trait DepthFirst extends Solver {
    * where this time it doesn't check for that child.
    */
   def solve(
-    graph: Array[Array[Int]], 
-    maxTime: Long, 
+    graph:  Array[Array[Int]],
     cutoff: (Int, Long) => Boolean
   ): (Option[Boolean], Int, Long, Option[List[Int]]) = {
 
     val edges        = createEdgeMap(graph)
     var iterations   = 0
     val startTime    = nanoTime
-    val vCount = mutable.Map[Int, Int]()
-    val eCount = mutable.Map[(Int, Int), Int]()
+    // val vCount = mutable.Map[Int, Int]()
+    // val eCount = mutable.Map[(Int, Int), Int]()
     var solution: Option[List[Int]] = None
 
     def putBack(
@@ -297,20 +271,20 @@ trait DepthFirst extends Solver {
         recurseSolve(sol.tail, checked + sol.head)
       }
       else {
-        nextVertex(sol, edges, checked) match {
+        heuristic(sol, edges, checked) match {
           case None => { putBack(deleted, edges); Some(false) }
           case Some(i) if !check(edges) => {
             putBack(deleted, edges); Some(false)
           }
           case Some(i)                 => {
-            if (vCount.contains(i)) vCount(i) += 1 
-            else                    vCount(i) = 1
+            // if (vCount.contains(i)) vCount(i) += 1 
+            // else                    vCount(i) = 1
 
-            if (eCount.contains((i, sol.head))) eCount((i, sol.head)) += 1 
-            else                                eCount((i, sol.head)) = 1
+            // if (eCount.contains((i, sol.head))) eCount((i, sol.head)) += 1 
+            // else                                eCount((i, sol.head)) = 1
             
-            recurseSolve((i :: sol).reverse) match {
-            // recurseSolve(i :: sol) match {
+            // recurseSolve((i :: sol).reverse) match {
+            recurseSolve(i :: sol) match {
               case None        => { putBack(deleted, edges); None }
               case Some(true)  => Some(true)
               case Some(false) => 
@@ -322,69 +296,203 @@ trait DepthFirst extends Solver {
     }
 
     if (check(edges)) {
-      val hamiltonian = recurseSolve(List(nextVertex(Nil, edges, Set()).get))
-      println(vCount)
-      println(
-      
-      )
-      println(eCount.toVector.sortBy(_._2))
+      val hamiltonian = recurseSolve(List(heuristic(Nil, edges, Set()).get))
       (hamiltonian, iterations, nanoTime - startTime, solution)
     } 
     else              (Some(false), 1, nanoTime - startTime, None)
   }
 }
 
-object Naked extends DepthFirst {
+object Hueristics {
+    /* next vertex gives an option on an integer for the next vertex.
+   * The next vertex is selected bases on the first element in the solution
+   * a vertex is selected that is not in the solution and is not tried yet.
+   * if a heuristic is used the highest or lowest is vertex is selected. */
+  def nextVertex(heuristic: String)(
+    sol:     List[Int], 
+    edges:   Map[Int, Set[Int]], 
+    checked: Set[Int]
+  ): Option[Int] = {
 
-  def heuristic  = "none"
-  def name       = "nakeddepthfirst"
+    val degreeMap = edges.mapValues(_.size)
+    val options   = if (sol.isEmpty) edges.keys.toList else edges(sol.head)
+      .filter(e => !sol.contains(e) && !checked.contains(e))
+      .toList
+    val sorted    = options.sortWith((x, y) => {
+      if      (heuristic == "low")  degreeMap(x) < degreeMap(y)
+      else if (heuristic == "high") degreeMap(x) > degreeMap(y)
+      else                          true
+    })
+
+    if (sorted.isEmpty) None
+    else                Some(sorted.head)
+  }
+
+  def nextVertexRemainingUnselected(heuristic: String)(
+    sol:     List[Int], 
+    edges:   Map[Int, Set[Int]], 
+    checked: Set[Int]
+  ): Option[Int] = {
+
+    val unseselected = (n: Int) => !checked.contains(n)
+
+    val degreeMap = edges.mapValues(neighbours => neighbours.filter(unseselected).size)
+    val options   = if (sol.isEmpty) edges.keys.toList else edges(sol.head)
+      .filter(e => !sol.contains(e) && !checked.contains(e))
+      .toList
+    val sorted    = options.sortWith((x, y) => {
+      if      (heuristic == "low")  degreeMap(x) < degreeMap(y)
+      else if (heuristic == "high") degreeMap(x) > degreeMap(y)
+      else                          true
+    })
+
+    if (sorted.isEmpty) None
+    else                Some(sorted.head)
+  }
+}
+
+object ArbitraryHeuristic extends DepthFirst {
+
+  def heuristic  = Hueristics.nextVertex("none")
+  def name       = "arbitraryheuristic"
   def pruneFuncs = List()
   def checkFuncs = List()
 }
 
-object Vanhorn extends DepthFirst {
+object LowHeuristic extends DepthFirst {
 
-  def heuristic  = "low"
-  def name       = "vanhorn"
+  def heuristic  = Hueristics.nextVertex("low")
+  def name       = "lowheuristic"
   def pruneFuncs = List()
   def checkFuncs = List()
 }
 
-object Cheeseman extends DepthFirst {
+object HighHeuristic extends DepthFirst {
 
-  def heuristic  = "high"
-  def name       = "cheeseman"
+  def heuristic  = Hueristics.nextVertex("high")
+  def name       = "highheuristic"
   def pruneFuncs = List()
   def checkFuncs = List()
 }
 
-object Martello extends DepthFirst {
-  
-  def heuristic  = "low"
-  def name       = "martello"
+object PathPruning extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("none")
+  def name = "pathpruning"
   def pruneFuncs = List(pathPruning, solutionPruning)
+  def checkFuncs = List()
+}
+
+object NeighbourPruning extends DepthFirst {
+  def heuristic = Hueristics.nextVertex("none")
+  def name = "neighbourpruning"
+  def pruneFuncs = List(neighbourPruning, solutionPruning)
+  def checkFuncs = List()
+} 
+
+object NeighbourAndPathPruning extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("none")
+  def name = "neighbourandpathpruning"
+  def pruneFuncs = List(pathPruning, neighbourPruning, solutionPruning)
+  def checkFuncs = List()
+}
+
+object CheckOneConnected extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("none")
+  def name       = "checkoneconnected"
+  def pruneFuncs = List()
+  def checkFuncs = List(checkOneConnected)
+}
+
+object CheckDisconnected extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("none")
+  def name       = "checkdisconnected"
+  def pruneFuncs = List()
+  def checkFuncs = List(checkDisconnected)
+}
+
+object CheckOneDegree extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("none")
+  def name       = "checkonedegree"
+  def pruneFuncs = List()
   def checkFuncs = List(checkOneDegree)
 }
 
-object Vandegriend extends DepthFirst {
+object CheckAll extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("none")
+  def name       = "checkall"
+  def pruneFuncs = List()
+  def checkFuncs = List(checkOneDegree, checkDisconnected, checkOneConnected)
+}
 
-  def heuristic  = "low"
-  def name       = "vandegriend"
-  def pruneFuncs = List(pathPruning, solutionPruning, neighbourPruning)
+object CheckOneConnectedWithPruning extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("none")
+  def name       = "checkoneconnectedwithpruning"
+  def pruneFuncs = List(pathPruning, neighbourPruning, solutionPruning)
+  def checkFuncs = List(checkOneConnected)
+}
+
+object CheckDisconnectedWithPruning extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("none")
+  def name       = "checkdisconnectedwithpruning"
+  def pruneFuncs = List(pathPruning, neighbourPruning, solutionPruning)
+  def checkFuncs = List(checkDisconnected)
+}
+
+object CheckOneDegreeWithPruning extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("none")
+  def name       = "checkonedegreewithpruning"
+  def pruneFuncs = List(pathPruning, neighbourPruning, solutionPruning)
   def checkFuncs = List(checkOneDegree)
 }
 
-object Rubin extends DepthFirst {
-
-  def heuristic  = "none"
-  def name       = "rubin"
-  def pruneFuncs = List(pathPruning, solutionPruning, neighbourPruning)
+object CheckAllWithPruning extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("none")
+  def name       = "checkallwithpruning"
+  def pruneFuncs = List(pathPruning, neighbourPruning, solutionPruning)
   def checkFuncs = List(checkOneDegree, checkDisconnected, checkOneConnected)
 }
 
-object Sleegers extends DepthFirst {
-  def heuristic  = "low"
-  def name       = "sleegers"
-  def pruneFuncs = List(pathPruning, solutionPruning, neighbourPruning)
+object CheckAllWithPruningLow extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("low")
+  def name       = "checkallwithpruninglow"
+  def pruneFuncs = List(pathPruning, neighbourPruning, solutionPruning)
   def checkFuncs = List(checkOneDegree, checkDisconnected, checkOneConnected)
 }
+
+object CheckAllWithPruningHigh extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("high")
+  def name       = "checkallwithpruninglow"
+  def pruneFuncs = List(pathPruning, neighbourPruning, solutionPruning)
+  def checkFuncs = List(checkOneDegree, checkDisconnected, checkOneConnected)
+}
+
+// object Martello extends DepthFirst {
+  
+//   def heuristic  = Hueristics.nextVertex("low")
+//   def name       = "martello"
+//   def pruneFuncs = List(pathPruning, solutionPruning)
+//   def checkFuncs = List(checkOneDegree)
+// }
+
+// object Vandegriend extends DepthFirst {
+
+//   def heuristic  = Hueristics.nextVertex("low")
+//   def name       = "vandegriend"
+//   def pruneFuncs = List(pathPruning, solutionPruning, neighbourPruning)
+//   def checkFuncs = List(checkOneDegree)
+// }
+
+// object Rubin extends DepthFirst {
+
+//   def heuristic  = Hueristics.nextVertex("none")
+//   def name       = "rubin"
+//   def pruneFuncs = List(pathPruning, solutionPruning, neighbourPruning)
+//   def checkFuncs = List(checkOneDegree, checkDisconnected, checkOneConnected)
+// }
+
+// object Sleegers extends DepthFirst {
+//   def heuristic  = Hueristics.nextVertex("low")
+//   def name       = "sleegers"
+//   def pruneFuncs = List(pathPruning, solutionPruning, neighbourPruning)
+//   def checkFuncs = List(checkOneDegree, checkDisconnected, checkOneConnected)
+// }

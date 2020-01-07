@@ -15,14 +15,15 @@ object PPA extends App {
         val newGraph = copy(graph)
         val random = scala.util.Random
         val edges = for (
-        i <- graph.indices;
-        j <- graph.indices;
-        if graph(i)(j) == 1 && i < j 
+            i <- graph.indices;
+            j <- graph.indices;
+            if graph(i)(j) == 1 && i < j 
         ) yield (i, j)
+        
         val complement = for (
-        i <- 0 until graph.size;
-        j <- 0 until graph.size; 
-        if !edges.contains((i, j)) && !edges.contains((j, i)) && i != j && i < j
+            i <- 0 until graph.size;
+            j <- 0 until graph.size; 
+            if !edges.contains((i, j)) && !edges.contains((j, i)) && i != j && i < j
         ) yield (i, j)
 
         val deleteEdge = edges(random.nextInt(edges.size))
@@ -32,18 +33,18 @@ object PPA extends App {
         val moveType = random.nextInt(3)
 
         if (moveType == 0) {
-        newGraph(deleteEdge._1)(deleteEdge._2) = 0
-        newGraph(deleteEdge._2)(deleteEdge._1) = 0
-        newGraph(newEdge._1)(newEdge._2) = 1
-        newGraph(newEdge._2)(newEdge._1) = 1
+            newGraph(deleteEdge._1)(deleteEdge._2) = 0
+            newGraph(deleteEdge._2)(deleteEdge._1) = 0
+            newGraph(newEdge._1)(newEdge._2) = 1
+            newGraph(newEdge._2)(newEdge._1) = 1
         }
         if (moveType == 1) {
-        newGraph(deleteEdge._1)(deleteEdge._2) = 0
-        newGraph(deleteEdge._2)(deleteEdge._1) = 0
+            newGraph(deleteEdge._1)(deleteEdge._2) = 0
+            newGraph(deleteEdge._2)(deleteEdge._1) = 0
         }
         if (moveType == 2) {
-        newGraph(newEdge._1)(newEdge._2) = 1
-        newGraph(newEdge._2)(newEdge._1) = 1
+            newGraph(newEdge._1)(newEdge._2) = 1
+            newGraph(newEdge._2)(newEdge._1) = 1
         }
 
         newGraph
@@ -53,20 +54,13 @@ object PPA extends App {
         if (mutations == 0) graph
         else                randomMutations(mutations - 1, randomMutation(graph))
 
-    //def fitnessMap = (x: Int) = 1/2 * (scala.math.tanh(4*x-2)+1)
 
     def cutoff(maxTime: Long, maxIter: Int, timeOrIterations: String = "time")
         (curIter: Int, startTime: Long): Boolean =
         if (timeOrIterations == "time") nanoTime - startTime > maxTime
         else                            curIter > maxIter
         
-    // def numberOfRunners(nMax: Int, nI: Float): Int
-    //     scala.math.ceil(nMax * nI * random.nextFloat)
 
-
-    // Ni(x) = x / 1,000,000,000 
-    // ceil(Ni * maxMutation)
-    // def distance()
 
     def ppa(
         populationSize: Int,
@@ -80,7 +74,6 @@ object PPA extends App {
         var maxFitness = 0
         var maxHamiltonian = true
 
-        // .sortWith((a, b) =>  a._2 > b._2)
         var chicke = 0
 
         for (_ <- 0 to numberOfGens) {
@@ -142,5 +135,3 @@ object PPA extends App {
         GraphGenerator.writeGraphToFile(s"frontend/resources/ppa/$maxEvaluations-evaluations/$graphSize-difficult", i, json)
     }
 }
-
-// max - evaluations

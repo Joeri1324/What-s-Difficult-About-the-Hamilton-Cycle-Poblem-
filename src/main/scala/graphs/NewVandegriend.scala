@@ -217,7 +217,7 @@ object NewVandegriend extends Solver {
     else                        Some(sortedOnDegree.head)
   }
 
-  def solve(graphAsArray: Array[Array[Int]], maxTime: Long, cutoff: (Int, Long) => Boolean): 
+  def solve(graphAsArray: Array[Array[Int]],  cutoff: (Int, Long) => Boolean): 
     (Option[Boolean], Int, Long, Option[List[Int]]) = {
     // type Node = (ListMap[Int, Boolean], List[Int], ListBuffer[(Int, Int)])
 

@@ -101,11 +101,4 @@ object Hillclimb extends App {
     GraphGenerator.writeGraphToFile(s"frontend/resources/hillclimb/$maxEvaluations-evaluations/$graphSize-difficult", i, json)
   }
 
-  
-  // println("ITERATIONS", fitness)
-
-  // GraphReader.graphsFromFolder("results/difficult/hillclimb/14").foreach(graph =>
-  //   // println(graph.array)
-  //   println(CheckAllWithPruning.solve(graph.array, cutoff(10000.toLong * 10000.toLong, 1000000000, "iterations")))
-  // )
 }
