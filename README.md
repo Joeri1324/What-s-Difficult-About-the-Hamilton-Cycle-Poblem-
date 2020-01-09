@@ -1,5 +1,5 @@
-# phasetransition-in-hamilton-cycles
-Extention of the replication by Van Horn of Cheeseman.
+# What's Difficult About the Hamilton Cycle Problem?
+This repository holds the source code of the Master thesis by Joeri Sleegers. A prerequisite to run the code is the scala build tool https://www.scala-sbt.org/. 
 
-# Results
-results can be found in the results folder
+## Source Location
+The source code can be found at src/main/graphs/
