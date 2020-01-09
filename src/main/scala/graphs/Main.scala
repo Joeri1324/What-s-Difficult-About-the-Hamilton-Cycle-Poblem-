@@ -64,43 +64,6 @@ object Main extends App {
     } finally pw.close()
   }
 
-  // def mutations(algorithm: Solver, id: Int, size: Int, mutations: Int) = {
-  //   val graph = GraphReader.graphsFromFolder(s"src/main/resources/indexed-$size-node-test-set")
-  //     .filter(_.identifier == id)(0)
-  //   val name = algorithm.name
-  //   var first = true
-  //   val pw = new PrintWriter(s"results/mutations/random-$name-$size.json")
-  //   val (newGraph, removed, added) = graph.randomMutation
-
-  //   try {
-  //     pw.append("[\n")
-  //     for (
-  //       _ <- 0 until mutations
-  //     ) {
-  //       if (!first) { pw.append(",")}
-  //       first = false 
-  //       val (newGraph, removed, added) = graph.randomMutation
-  //       val (hamiltonian, recursions, time, path) =
-  //         algorithm.solve(newGraph.array, cutoff(10000.toLong * 10000.toLong, 100000, "iterations"))
-
-  //       val writeHamiltonian = hamiltonian match {
-  //         case Some(result) => result.toString
-  //         case None         => "null"
-  //       }
-  //       val removedd = (removed.endpoints(0).id, removed.endpoints(1).id)
-
-  //       pw.append(
-  //         s"""{
-  //           "removed": "$removedd", "added": "$added", "iterations": $recursions,
-  //           "hamiltonian": $writeHamiltonian}\n"""
-  //       )
-  //       println(recursions)
-  //   }
-
-  //     pw.append("]")
-  //   } finally pw.close()
-  // }
-
   def randomMutation(graph: Array[Array[Int]]) = {
     val newGraph = graph.clone()
     val random = scala.util.Random
@@ -224,24 +187,28 @@ object Main extends App {
     } finally pw.close()
   }
 
-  // mutations(Vandegriend, 1683, 32, 100)
+  val algos = List(
+    ArbitraryHeuristic,
+    LowHeuristic,
+    HighHeuristic,
+    PathPruning,
+    NeighbourPruning,
+    NeighbourAndPathPruning,
+    CheckOneConnectedWithPruning,
+    CheckDisconnectedWithPruning,
+    CheckOneDegreeWithPruning,
+    CheckAllWithPruning,
+    CheckDisconnected,
+    CheckOneDegree,
+    CheckOneConnected
+  )
 
-  // hillClimb(Vandegriend, 8, 1000, 20)
-
-  // hillExperiment(Rubin, 16, 1000)
-
-  // val algos = List( NeighbourPruning, PathPruning, NeighbourAndPathPruning)
-  val algos = List(CheckDisconnected, CheckOneDegree, CheckOneConnected)
-  //algos.foreach(a =>  hillExperiment(a, 16, 10000))
-  // algos.foreach(a =>  hillExperiment(a, 24, 1000))
-  //algos.foreach(a =>  hillExperiment(a, 32, 10000))
-  // val algos = List(Sleegers)
   algos.foreach(a => experiment(a, 16, "iterations"))
   algos.foreach(a => experiment(a, 16, "time"))
-  // algos.foreach(a => experiment(a, 24, "iterations"))
-
-  // println(Sleegers.solve(GraphReader.graphsFromFolder("src/main/resources/indexed-32-node-test-set")
-  //       .filter(x => x.identifier == 1684)(0).array, 10000.toLong * 10000.toLong, cutoff(10000.toLong * 10000.toLong, 1000000000, "iterations")))
+  algos.foreach(a => experiment(a, 24, "iterations"))
+  algos.foreach(a => experiment(a, 24, "time"))
+  algos.foreach(a => experiment(a, 32, "iterations"))
+  algos.foreach(a => experiment(a, 32, "time"))
 
 }
 

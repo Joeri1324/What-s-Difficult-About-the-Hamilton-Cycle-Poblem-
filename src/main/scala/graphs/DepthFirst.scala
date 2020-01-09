@@ -465,34 +465,3 @@ object CheckAllWithPruningHigh extends DepthFirst {
   def pruneFuncs = List(pathPruning, neighbourPruning, solutionPruning)
   def checkFuncs = List(checkOneDegree, checkDisconnected, checkOneConnected)
 }
-
-// object Martello extends DepthFirst {
-  
-//   def heuristic  = Hueristics.nextVertex("low")
-//   def name       = "martello"
-//   def pruneFuncs = List(pathPruning, solutionPruning)
-//   def checkFuncs = List(checkOneDegree)
-// }
-
-// object Vandegriend extends DepthFirst {
-
-//   def heuristic  = Hueristics.nextVertex("low")
-//   def name       = "vandegriend"
-//   def pruneFuncs = List(pathPruning, solutionPruning, neighbourPruning)
-//   def checkFuncs = List(checkOneDegree)
-// }
-
-// object Rubin extends DepthFirst {
-
-//   def heuristic  = Hueristics.nextVertex("none")
-//   def name       = "rubin"
-//   def pruneFuncs = List(pathPruning, solutionPruning, neighbourPruning)
-//   def checkFuncs = List(checkOneDegree, checkDisconnected, checkOneConnected)
-// }
-
-// object Sleegers extends DepthFirst {
-//   def heuristic  = Hueristics.nextVertex("low")
-//   def name       = "sleegers"
-//   def pruneFuncs = List(pathPruning, solutionPruning, neighbourPruning)
-//   def checkFuncs = List(checkOneDegree, checkDisconnected, checkOneConnected)
-// }
