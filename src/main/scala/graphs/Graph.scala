@@ -12,14 +12,16 @@ import scala.util.Try
 case class Vertex(id: Int)
 case class Endpoint(id: Int)
 case class Edges(endpoints: List[Endpoint])
+
+
 case class Graph(
   identifier:      Int, 
   vertices:        List[Vertex], 
   edges:           List[Edges], 
   connectivityMap: Map[String, Int],
   size:            Int,
-  recursions:      Int,
-  hamiltonian:     Boolean,
+  recursions:      Option[Int],
+  hamiltonian:     Option[Boolean],
 ) {
 
   def array = {
@@ -75,11 +77,22 @@ object MyJsonProtocol extends DefaultJsonProtocol {
     "connectivityMap", "size", "recursions", "hamiltonian")
   implicit object graphListJsonFormat extends RootJsonFormat[GraphList] {
     def read(value: JsValue) = GraphList(value.convertTo[List[Graph]])
+
     def write(value: GraphList) = JsArray(
       value.graphs.map(graph => JsObject(
-        "hamiltonian" -> JsNumber({ if (graph.hamiltonian) 1 else 0 }),
+        "hamiltonian" -> {
+          graph.hamiltonian match {
+            case Some(ham) => JsBoolean(ham)
+            case _ => JsNull
+          }
+        },
         "identifier" -> JsNumber(graph.identifier),
-        "recursions" -> JsNumber(graph.recursions),
+        "recursions" -> {
+          graph.recursions match {
+            case Some(rec) => JsNumber(rec)
+            case _ => JsNull
+          }
+        },
         "vertices"   -> JsArray(
           graph.vertices.map(v => JsObject("id" -> JsNumber(v.id)))
         ),
@@ -103,12 +116,18 @@ import DefaultJsonProtocol._
 
 object GraphReader {
 
-  def graphsFromFile(fileName: String) = 
-    scala.io.Source.fromFile(fileName)
+  def graphsFromFile(fileName: String) = {
+    val read = scala.io.Source.fromFile(fileName)
       .mkString
       .parseJson
       .convertTo[GraphList]
       .graphs
+      .toList
+
+    for {
+      graph <- read
+    } yield graph
+  }
 
   def graphsFromFolder(folder: String) = {
     def handleFile(name: String) = 
@@ -192,7 +211,7 @@ object GraphGenerator extends App {
     ) yield(Edges(List(Endpoint(i), Endpoint(j)))) } toList
     val degreeMap = { for (i <- graph.indices) yield (i.toString, graph(i).count(_ == 1)) } toMap
 
-    Graph(identifier, vertices, edges, degreeMap, graph.size, recursions, hamiltonian)
+    Graph(identifier, vertices, edges, degreeMap, graph.size, Some(recursions), Some(hamiltonian))
       .toJson
       .prettyPrint
   }

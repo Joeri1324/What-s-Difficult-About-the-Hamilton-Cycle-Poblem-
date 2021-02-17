@@ -154,7 +154,7 @@ trait DepthFirst extends Solver {
         if (n.isEmpty) false
         else           recurse(connectedAll ++ n, n)
       }
-    
+
     recurse()
   }
 
@@ -207,6 +207,37 @@ trait DepthFirst extends Solver {
     val points = mutable.ListBuffer[Int]()
     dfs(points)
     points.isEmpty
+  }
+
+  def checkClosedLoop(edges: Map[Int, mutable.Set[Int]]): Boolean = {
+    def recurse(index: Int, path: Set[Int] = Set[Int]()): Boolean = {
+      if (path.size == edges.size) {
+        return true
+      }
+      val neighbours = edges(index)
+
+      // all vertices in a closed loop have to have two neigh ours
+      if (neighbours.size != 2) {
+        return true
+      }
+
+      val neighboursNotInPath = neighbours.filterNot((vertex) => path.contains(vertex))
+
+      // println(" nerighbour ",  path, neighbours, neighboursNotInPath)
+      // closed loop
+      if (neighboursNotInPath.size == 0) {
+        return false
+      }
+      recurse(neighboursNotInPath.head, path + neighboursNotInPath.head)
+    }
+
+    //val required = edges.filter((vertexIndex, edges) => edges.size == 2)
+    val firstRequired = edges.find((keyValue) => keyValue._2.size == 2)
+
+    firstRequired match {
+      case Some(vertex) => recurse(vertex._1)
+      case None         => true
+    }
   }
 
  /** Transforms graph into a Map for faster lookup
@@ -463,5 +494,26 @@ object CheckAllWithPruningHigh extends DepthFirst {
   def heuristic  = Hueristics.nextVertex("high")
   def name       = "checkallwithpruninglow"
   def pruneFuncs = List(pathPruning, neighbourPruning, solutionPruning)
+  def checkFuncs = List(checkOneDegree, checkDisconnected, checkOneConnected)
+}
+
+object Martello extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("low")
+  def name       = "martello"
+  def pruneFuncs = List(pathPruning, solutionPruning)
+  def checkFuncs = List(checkOneDegree)
+}
+
+object Rubin extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("arbitrary")
+  def name       = "rubin"
+  def pruneFuncs = List(pathPruning, solutionPruning, neighbourPruning)
+  def checkFuncs = List(checkOneDegree, checkDisconnected, checkOneConnected, checkClosedLoop)
+}
+
+object Vandegriend extends DepthFirst {
+  def heuristic  = Hueristics.nextVertex("low")
+  def name       = "vandegriend"
+  def pruneFuncs = List(pathPruning, solutionPruning, neighbourPruning)
   def checkFuncs = List(checkOneDegree, checkDisconnected, checkOneConnected)
 }

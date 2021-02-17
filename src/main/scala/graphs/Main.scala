@@ -8,6 +8,7 @@ import java.lang.management._
 import System._
 
 
+
 object Main extends App {
 
   /** Perform experiment for a certain algorithm
@@ -29,13 +30,13 @@ object Main extends App {
     val name    = algorithm.name 
     var first   = true
     val pw      = new PrintWriter(s"results/$typ/result-$name-$size.json")
-    val folder  = s"src/main/resources/indexed-$size-node-test-set.json"
   
     try {
       pw.append("[\n")
-      
-      GraphReader.graphsFromFile(folder).foreach(graph => {
-        if (!first) { pw.append(",")}
+
+      if (size == 32) {
+        GraphReader.graphsFromFolder("src/main/resources/indexed-32-node-test-set").foreach(graph => {
+             if (!first) { pw.append(",")}
         first = false 
         val (hamiltonian, recursions, time, path) = algorithm
           .solve(graph.array, cutoff(maxTime, maxIter, typ))
@@ -59,7 +60,37 @@ object Main extends App {
           s""" "nanoseconds": $time\n, "algorithm": "$name", "path": $pathString}""" }
 
         pw.append(fileContent)
-      })
+        })
+      } else {
+        GraphReader.graphsFromFile(s"src/main/resources/indexed-$size-node-test-set.json").foreach(graph => {
+             if (!first) { pw.append(",")}
+        first = false 
+        val (hamiltonian, recursions, time, path) = algorithm
+          .solve(graph.array, cutoff(maxTime, maxIter, typ))
+
+        println(s"$name recursions: $recursions hamilton: $hamiltonian")
+        val id                 = graph.identifier
+        val relativeEdgeAmount = graph.relativeEdgeAmount
+        val pathString = path match {
+          case Some(p) => { "[" + p.map(v => s"""{"id": $v}""")
+            .toString
+            .stripPrefix("List(")
+            .stripSuffix(")").trim + "]" }
+          case None    => "null"
+        }
+        val writeHamiltonian = hamiltonian match {
+          case Some(result) => result.toString
+          case None         => "null"
+        }
+        val fileContent = { s"""{"id": $id, "degree": $relativeEdgeAmount, """ +
+          s""" "hamiltonian": $writeHamiltonian, "iterations": $recursions, "size": $size, """ +
+          s""" "nanoseconds": $time\n, "algorithm": "$name", "path": $pathString}""" }
+
+        pw.append(fileContent)
+        })
+      }
+      // read.foreach(graph => {
+      // })
       pw.append("]\n")
     } finally pw.close()
   }
@@ -188,27 +219,31 @@ object Main extends App {
   }
 
   val algos = List(
-    ArbitraryHeuristic,
-    LowHeuristic,
-    HighHeuristic,
-    PathPruning,
-    NeighbourPruning,
-    NeighbourAndPathPruning,
-    CheckOneConnectedWithPruning,
-    CheckDisconnectedWithPruning,
-    CheckOneDegreeWithPruning,
-    CheckAllWithPruning,
-    CheckDisconnected,
-    CheckOneDegree,
-    CheckOneConnected
+    //ArbitraryHeuristic,
+    // LowHeuristic,
+    //HighHeuristic,
+    // PathPruning,
+    // NeighbourPruning,
+    // NeighbourAndPathPruning,
+    // CheckOneConnectedWithPruning,
+    // CheckDisconnectedWithPruning,
+    // CheckOneDegreeWithPruning,
+    //CheckAllWithPruning,
+    // CheckDisconnected,
+    //CheckOneDegree,
+    //CheckOneConnected
+    // Martello,
+    // Vandegriend,
+    Rubin
   )
 
-  algos.foreach(a => experiment(a, 16, "iterations"))
-  algos.foreach(a => experiment(a, 16, "time"))
-  algos.foreach(a => experiment(a, 24, "iterations"))
-  algos.foreach(a => experiment(a, 24, "time"))
-  algos.foreach(a => experiment(a, 32, "iterations"))
-  algos.foreach(a => experiment(a, 32, "time"))
+  // algos.foreach(a => experiment(a, 16, "iterations"))
+  // algos.foreach(a => experiment(a, 16, "time"))
+  // algos.foreach(a => experiment(a, 24, "iterations"))
+  // algos.foreach(a => experiment(a, 24, "time"))
+  algos.foreach(a => 
+    experiment(a, 32, "iterations"))
+  algos.foreach(a =>
+   experiment(a, 32, "time"))
 
 }
-
